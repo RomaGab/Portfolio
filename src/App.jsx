@@ -12,7 +12,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 function App() {
     return (
         <BrowserRouter>
-            <div className="about-layout">
+            <div className="flex flex-col items-center justify-center w-full gap-[60px]">
                     <NavigationBar/>
                     <Routes>
                         <Route path="/" element={<Home/>}/>
