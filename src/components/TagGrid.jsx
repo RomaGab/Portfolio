@@ -11,7 +11,6 @@ const TagGrid = ({ tags, maxChars = 60 }) => {
 
     tags.forEach((tag) => {
         const tagLength = tag.length + 2;
-
         if (currentRowChars + tagLength <= maxChars || currentRow.length === 0) {
             currentRow.push(tag);
             currentRowChars += tagLength;
@@ -21,6 +20,7 @@ const TagGrid = ({ tags, maxChars = 60 }) => {
             currentRowChars = tagLength;
         }
     });
+
     if (currentRow.length > 0) allRows.push(currentRow);
 
     const firstRow = allRows[0];
@@ -28,28 +28,40 @@ const TagGrid = ({ tags, maxChars = 60 }) => {
     const hasMore = extraRows.length > 0;
 
     return (
-        <div className="tags-container">
-            <div className="tags-row">
-                <div className="tags-list">
+        <div className="flex flex-col gap-2 mt-0">
+            <div className="flex items-center gap-2 flex-nowrap">
+                <div className="flex items-center gap-2 flex-nowrap">
                     {firstRow.map((tag, i) => (
-                        <span key={i} className="tag">{tag}</span>
-                    ))}
-                    {hasMore && (
-                        <button
-                            className={`tag-toggle ${isExpanded ? 'active' : ''}`}
-                            onClick={() => setIsExpanded(!isExpanded)}
+                        <span
+                            key={i}
+                            className="bg-[#f3f3f3] text-[#444] px-3 py-1 rounded-md text-[0.8rem] font-bold whitespace-nowrap"
                         >
-                            <FaChevronRight />
-                        </button>
-                    )}
+                            {tag}
+                        </span>
+                    ))}
                 </div>
+                {hasMore && (
+                    <button
+                        onClick={() => setIsExpanded(!isExpanded)}
+                        className={`bg-none border-none text-[#bababa] cursor-pointer flex items-center p-1 transition-transform duration-300 hover:text-black ${
+                            isExpanded ? 'rotate-90 text-black' : ''
+                        }`}
+                    >
+                        <FaChevronRight size={14}/>
+                    </button>
+                )}
             </div>
             {isExpanded && hasMore && (
-                <div className="tags-extra-container">
+                <div className="flex flex-col gap-2 tag-toggle">
                     {extraRows.map((row, rowIndex) => (
-                        <div key={rowIndex} className="tags-list">
+                        <div key={rowIndex} className="flex items-center gap-2 flex-nowrap">
                             {row.map((tag, i) => (
-                                <span key={i} className="tag">{tag}</span>
+                                <span
+                                    key={i}
+                                    className="bg-[#f3f3f3] text-[#444] px-3 py-1 rounded-md text-[0.8rem] font-bold whitespace-nowrap"
+                                >
+                                    {tag}
+                                </span>
                             ))}
                         </div>
                     ))}

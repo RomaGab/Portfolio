@@ -44,21 +44,21 @@ from {
 } */
 /*? ======================== ABOUT ME ======================== */
 
-.about-layout {
+/* .about-layout {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
     gap: 60px;
-}
+} */
 
-.logo {
+.profile-picture {
     width: 200px;
     height: 200px;
     border-radius: 50%;
 }
-
+/*
 .about-me-layout {
     display: flex;
     flex-direction: column;
@@ -69,11 +69,11 @@ from {
     text-align: center;
     align-self: center;
     font-size: 50px;
-}
+} */
 
 /*? ======================== TIMELINE ======================== */
 
-.timeline-layout {
+/* .timeline-layout {
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -125,7 +125,6 @@ from {
 }
 
 .line {
-    /* width: 2px; */
     background-color: #666;
     position: absolute;
     top: 40px;
@@ -204,10 +203,6 @@ from {
     color: #000;
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-5px); }
-    to { opacity: 1; transform: translateY(0); }
-}
 
 .skills-section {
     display: flex;
@@ -219,13 +214,21 @@ from {
 
 .skill-icon {
     font-size: 1.1rem;
-    /* color: #e91e24; */
     flex-shrink: 0;
     margin-top: 5px;
 }
 
 .tags-container {
     margin-top: 0 !important;
+} */
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.tag-toggle {
+    animation: fadeIn 0.3s ease-out;
 }
 
 /*? ======================== FOOTER ======================== */

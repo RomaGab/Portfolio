@@ -1,6 +1,6 @@
 const AboutMe = () => {
-    return <div className="about-me-layout">
-        <h1>About Me</h1>
+    return <div className="flex flex-col gap-10">
+        <h1 className="text-center self-center text-[50px] font-bold">About Me</h1>
         <p>I am Romain GABRILLARGUES</p>
         <p>bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb<br/>
         bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb<br/>
