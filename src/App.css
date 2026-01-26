@@ -44,30 +44,54 @@ from {
 } */
 /*? ======================== ABOUT ME ======================== */
 
-.about-me {
+.about-layout {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
+    gap: 60px;
 }
 
 .logo {
     width: 200px;
     height: 200px;
-    background-color: #e91e24;
     border-radius: 50%;
+}
+
+.about-me-layout {
     display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.about-me-layout h1 {
+    text-align: center;
+    align-self: center;
+    font-size: 50px;
 }
 
 /*? ======================== TIMELINE ======================== */
 
-.timeline-wrapper {
-    padding: 50px;
+.timeline-layout {
     display: flex;
     flex-direction: column;
+    gap: 40px;
     align-items: flex-start;
+    width: 50%;
+}
+
+.timeline-layout h1 {
+    text-align: center;
+    align-self: center;
+    font-size: 24px;
+}
+
+.timeline-wrapper {
+    display: flex;
+    flex-direction: column;
     text-align: left;
+    gap: 10px;
 }
 
 .timeline-item {
