@@ -13,12 +13,12 @@ function App() {
     return (
         <BrowserRouter>
             <div className="flex flex-col items-center justify-center w-full gap-[60px]">
-                    <NavigationBar/>
-                    <Routes>
-                        <Route path="/" element={<Home/>}/>
-                        <Route path="/work" element={<Work/>}/>
-                        <Route path="/about" element={<About/>}/>
-                    </Routes>
+                <NavigationBar/>
+                <Routes>
+                    <Route path="/" element={<Home/>}/>
+                    <Route path="/work" element={<Work/>}/>
+                    <Route path="/about" element={<About/>}/>
+                </Routes>
                 <Footer/>
             </div>
         </BrowserRouter>

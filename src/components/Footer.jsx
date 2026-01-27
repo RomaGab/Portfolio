@@ -1,11 +1,16 @@
 import { FaLinkedinIn } from 'react-icons/fa';
 
+import profile from '../../data/profile.json';
+
 const Footer = () => {
     return (
         <footer className="footer">
             <div className="footer-container">
                 <div className="footer-column logo-column">
-                    <img className="footer-logo" src="https://media.licdn.com/dms/image/v2/D4E03AQH0H_JCBuAtXQ/profile-displayphoto-shrink_400_400/B4EZbz2qHSHAAo-/0/1747847914492?e=1770854400&v=beta&t=GNfo6Hknoc98AoFt6g5YAVb5wpfGom5BUeA6eP7sAkk"/>
+                    <img className="footer-logo"
+                    src={profile.profilePicture.icon}
+                    alt={profile.profilePicture.alt}
+                />
                 </div>
                 <div className="footer-column">
                     <h3>Projects</h3>
@@ -25,7 +30,7 @@ const Footer = () => {
                 <div className="footer-column">
                     <h3>Contact Me</h3>
                     <div className="social-icons">
-                        <a className="social-box" href="https://www.linkedin.com/in/romain-gabrillargues/" target="_blank"><FaLinkedinIn/></a>
+                        <a className="social-box" href={profile.contact} target="_blank"><FaLinkedinIn/></a>
                     </div>
                 </div>
             </div>

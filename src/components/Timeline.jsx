@@ -1,12 +1,12 @@
 import { HiAcademicCap } from "react-icons/hi2";
 import TagGrid from "./TagGrid";
 
-const Timeline = ({ title, data }) => {
+const Timeline = ({title, data}) => {
     if (!data) return <p>N/A</p>;
 
     return (
         <div className="flex flex-col gap-10 items-start w-1/2">
-            <h1 className="text-center self-center text-2xl font-bold">{title}</h1>
+            <h1 className="title">{title}</h1>
             <div className="flex flex-col text-left gap-[10px] w-full">
                 {data.map((item, index) => (
                     <div key={index} className="flex gap-5 min-h-[125px]">

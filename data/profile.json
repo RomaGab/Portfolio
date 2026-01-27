@@ -1,0 +1,131 @@
+{
+    "profilePicture": {
+        "icon": "https://media.licdn.com/dms/image/v2/D4E03AQH0H_JCBuAtXQ/profile-displayphoto-shrink_400_400/B4EZbz2qHSHAAo-/0/1747847914492?e=1770854400&v=beta&t=GNfo6Hknoc98AoFt6g5YAVb5wpfGom5BUeA6eP7sAkk",
+        "alt": "Romain G. profile"
+    },
+    "topSkills": [
+        "JavaScript",
+        "Python",
+        "C++",
+        "C#",
+        "Jira",
+        "Agile Methodologies"
+    ],
+    "experience": [
+        {
+            "title": "Delivery Tools Owner",
+            "subtitle": "Kering",
+            "logo": "https://media.licdn.com/dms/image/v2/D4E0BAQHZc210Xd5Zjg/company-logo_100_100/B4EZfKb4UNG4AQ-/0/1751447996124/kering_logo?e=1770854400&v=beta&t=J6C7Joudf8STlj1f7pIt_nUuqCzfZKATXk0uQHlmPvw",
+            "link": "https://www.kering.com/",
+            "contract": "Apprenticeship",
+            "startDate": "Sep 2025",
+            "endDate": "Aug 2026",
+            "city": "Paris",
+            "country": "France",
+            "skills":  [
+                "Jira",
+                "Confluence",
+                "Agile Methodologies",
+                "JavaScript",
+                "Python",
+                "Groovy",
+                "HTML",
+                "Git",
+                "Atlassian Suite",
+                "Project Management",
+                "Custom Tool Development",
+                "Programming"
+            ]
+        },
+        {
+            "title": "Software Developer",
+            "subtitle": "Bizaroïd",
+            "logo": "https://media.licdn.com/dms/image/v2/C4E0BAQFilTwCj6qtQA/company-logo_100_100/company-logo_100_100/0/1630565391883/bizarod_logo?e=1770854400&v=beta&t=t1mUbwZrIQO0nYaGDvNKXo8qMaZfAQmHkLQZfl3pHT4",
+            "link": "https://bizaroid.tv/",
+            "contract": "Apprenticeship",
+            "startDate": "Sep 2024",
+            "endDate": "Aug 2025",
+            "city": "Paris",
+            "country": "France",
+            "skills":  [
+                "C++",
+                "Python",
+                "JavaScript",
+                "HTML",
+                "Git",
+                "Software Development",
+                "Custom Tool Development",
+                "Programming",
+                "Project Management"
+            ]
+        },
+        {
+            "title": "Unity Tool Developer",
+            "subtitle": "Dada! Animation",
+            "logo": "https://media.licdn.com/dms/image/v2/C4E0BAQFQj6KzaSP_9w/company-logo_100_100/company-logo_100_100/0/1654076032270/dada_animation_logo?e=1770854400&v=beta&t=ppoc7b-uQBsAmhoFSZNhLgE2vJpnMKZqbzhmwqonXds",
+            "link": "https://www.dada-animation.com/",
+            "contract": "Internship",
+            "startDate": "Jun 2023",
+            "endDate": "Aug 2024",
+            "city": "Paris",
+            "country": "France",
+            "skills":  [
+                "C#",
+                "Python",
+                "Git",
+                "Software Development",
+                "Project Management",
+                "Custom Tool Development",
+                "Programming"
+            ]
+        }
+    ],
+    "education": [
+        {
+            "title": "ISART Digital",
+            "subtitle": "Lead Gameplay Programmer",
+            "logo": "https://media.licdn.com/dms/image/v2/C4E0BAQFesU6Xy3SluQ/company-logo_100_100/company-logo_100_100/0/1631343813886?e=1770854400&v=beta&t=FY96elboVZ_h9lpmWrJQsD-7iVDDh0FvJ3uNXdCFU2w",
+            "link": "https://www.isart.fr/",
+            "contract": "",
+            "startDate": "2021",
+            "endDate": "2026",
+            "city": "Paris",
+            "country": "France",
+            "skills":  [
+                "C++",
+                "C#",
+                "JavaScript",
+                "Jira",
+                "Agile Methodologies",
+                "Git",
+                "Custom Tool Development",
+                "Programming",
+                "Project Management"
+            ]
+        },
+        {
+            "title": "EPITECH - European Institute of Technology",
+            "subtitle": "Expert in Information Technologies",
+            "logo": "https://media.licdn.com/dms/image/v2/D4E0BAQELIfmOXpsRtA/company-logo_100_100/B4EZmft7JXIkAQ-/0/1759321240539/epitech___european_institute_of_technology_logo?e=1770854400&v=beta&t=wO7YECgAyzR6Hlm1MYKa_fgpEOBj2BuMeqIk-injin0",
+            "link": "https://www.epitech.eu/",
+            "contract": "",
+            "startDate": "2019",
+            "endDate": "2021",
+            "city": "Bordeaux",
+            "country": "France",
+            "skills":  [
+                "C++",
+                "Python",
+                "C",
+                "HTML",
+                "JavaScript",
+                "Git",
+                "Custom Tool Development",
+                "Software Development",
+                "Programming",
+                "Project Management"
+            ]
+        }
+    ],
+    "contact": "https://www.linkedin.com/in/romain-gabrillargues/"
+}
