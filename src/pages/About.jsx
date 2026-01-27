@@ -1,3 +1,5 @@
+import { FaLinkedinIn } from 'react-icons/fa';
+
 import AboutMe from "../components/AboutMe";
 import Timeline from "../components/Timeline";
 import CustomButton from "../components/CustomButton";
@@ -12,8 +14,7 @@ const About = () => {
                 alt={profile.profilePicture.alt}
             />
             <AboutMe/>
-            <CustomButton title={"Contact me"} to={profile.contact}/>
-            {/* <h1 className="title">Top Skills</h1> */}
+            <CustomButton title={"Contact me"} to={profile.contact} icon={FaLinkedinIn}/>
             <Timeline title={"Experience"} data={profile.experience}/>
             <Timeline title={"Education"} data={profile.education}/>
         </div>

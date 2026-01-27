@@ -12,7 +12,7 @@ const Timeline = ({title, data}) => {
                     <div key={index} className="flex gap-5 min-h-[125px]">
                         <div className="flex flex-col items-center relative">
                             <div className="w-[50px] h-[50px] bg-white z-[2] overflow-hidden flex items-center justify-center border border-gray-100">
-                                <img src={item.logo} className="w-full h-full object-cover" alt="logo"/>
+                                <img src={item.logo} className="w-full h-full object-cover" alt={item.title}/>
                             </div>
                             {index !== data.length - 1 && (
                                 <div className="absolute top-10 bottom-[-10px] z-[1]"></div>

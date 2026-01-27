@@ -1,20 +1,26 @@
 [
     {
         "name": "Roller Loop",
-        "thumbnail": "https://d3stdg5so273ei.cloudfront.net/AntoineLecca/2025-06-17/705796/3840xAUTO/ROLLERLOOP_Screenshot4_v3-min-AntoineLecca.png",
+        "thumbnail": "https://d3stdg5so273ei.cloudfront.net/AntoineLecca/2025-06-17/219168/1400xAUTO/AFFICHEROLLERLOOP_A0_PAYSAGE_RVB%2B%25281%2529-min-AntoineLecca-crop.jpg",
         "description": "Les surfers",
         "category": "Racing Game",
         "tags": [
             "C++",
             "Unreal Engine"
         ],
-        "startDate": "Sep 2025",
-        "endDate": "Sep 2025",
-        "addditionalInfo": "Hee Hee",
+        "startDate": "Sep 2024",
+        "endDate": "May 2025",
+        "additionalInfo": "Hee Hee",
         "awards": [
             {
-                "icon": "",
-                "toolti": ""
+                "icon": "public/assets/awards/pegases.png",
+                "title": "Pégases 2026 | Best Student Video Game - Nominee",
+                "link": "https://academiejeuvideo.org/"
+            },
+            {
+                "icon": "public/assets/awards/rookies.png",
+                "title": "Rookie Awards 2025 | Rookie of the Year - Finalist",
+                "link": "https://www.therookies.co/entries/39384"
             }
         ]
     },
@@ -29,13 +35,8 @@
         ],
         "startDate": "Sep 2025",
         "endDate": "Sep 2025",
-        "addditionalInfo": "Hee Hee",
-        "awards": [
-            {
-                "icon": "",
-                "toolti": ""
-            }
-        ]
+        "additionalInfo": "Hee Hee",
+        "awards": [ ]
     },
     {
         "name": "Hot On The Trail",
@@ -48,12 +49,7 @@
         ],
         "startDate": "Sep 2025",
         "endDate": "Sep 2025",
-        "addditionalInfo": "Hee Hee",
-        "awards": [
-            {
-                "icon": "",
-                "toolti": ""
-            }
-        ]
+        "additionalInfo": "Hee Hee",
+        "awards": [ ]
     }
 ]
