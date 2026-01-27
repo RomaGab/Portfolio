@@ -3,18 +3,20 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 // import { FaLinkedinIn } from 'react-icons/fa';
 
+import SearchBar from "./SearchBar";
+
+import profile from "../../data/profile.json"
+
 const Navbar = () => {
     const [show, setShow] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
 
+    const [firstName, lastName] = profile.name.split(' ');
+
     useEffect(() => {
         const handleScroll = () => {
             const currentScrollY = window.scrollY;
-            if (currentScrollY > lastScrollY && currentScrollY > 50) {
-                setShow(false);
-            } else {
-                setShow(true);
-            }
+            setShow(!(currentScrollY > lastScrollY && currentScrollY > 50));
             setLastScrollY(currentScrollY);
         };
 
@@ -24,7 +26,7 @@ const Navbar = () => {
 
     return (
         <motion.nav
-            animate={{ opacity: show ? 1 : 0/*, y: show ? 0 : -20*/ }}
+            animate={{ opacity: show ? 1 : 0 }}
             transition={{ duration: 0.25, ease: "easeOut" }}
             className="fixed top-6 left-1/2 -translate-x-1/2 w-[90%] max-w-4xl bg-white/80 backdrop-blur-lg rounded-full px-8 py-3 shadow-lg border border-slate-100 z-50"
         >
@@ -34,9 +36,10 @@ const Navbar = () => {
                         to="/"
                         onClick={() => window.scrollTo(0, 0)}
                     >
-                        Romain G.
+                        {firstName} {lastName.charAt(0).toUpperCase()}.
                     </Link>
-                    <div className="flex space-x-8">
+                    <div className="flex items-center space-x-8">
+                        <SearchBar/>
                         <NavLink to="/work">Work</NavLink>
                         <NavLink to="/about">About</NavLink>
                         <NavLink

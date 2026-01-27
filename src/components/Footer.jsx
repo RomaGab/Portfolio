@@ -22,10 +22,9 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div className="footer-column">
-                    <h3>Projects</h3>
+                    <h3>About</h3>
                     <ul>
-                        <li><a href="#games">Roller Loop</a></li>
-                        <li><a href="#team">Hot On The Trail</a></li>
+                        <li><a href="/about">About me</a></li>
                     </ul>
                 </div>
                 <div className="footer-column">
