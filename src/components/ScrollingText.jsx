@@ -9,10 +9,10 @@ const ScrollingText = ({roles}) => {
             setIndex((prevIndex) => (prevIndex + 1) % roles.length);
         }, 4000);
         return () => clearInterval(timer);
-    }, []);
+    });
 
     return (
-        <div className="h-[40px] overflow-hidden flex items-center justify-center">
+        <div className="h-[100px] overflow-hidden flex items-center justify-center">
             <AnimatePresence mode="wait">
                 <motion.span
                     key={roles[index]}
