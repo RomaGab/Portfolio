@@ -5,6 +5,13 @@
     text-align: center;
 }
 
+.title {
+    text-align: center;
+    align-self: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
 /* .logo {
     height: 6em;
     padding: 1.5em;
@@ -237,6 +244,7 @@ from {
     background-color: #ffffff;
     padding: 60px 20px;
     font-family: 'Inter', sans-serif;
+    width: 100%;
 }
 
 .footer-container {

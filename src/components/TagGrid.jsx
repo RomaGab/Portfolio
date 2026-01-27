@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { FaChevronRight } from 'react-icons/fa';
 
-const TagGrid = ({ tags, maxChars = 60 }) => {
+const TagGrid = ({tags, maxChars = 60}) => {
     const [isExpanded, setIsExpanded] = useState(false);
     if (!tags || tags.length === 0) return null;
 

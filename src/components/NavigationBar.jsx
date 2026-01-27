@@ -23,7 +23,7 @@ const Navbar = () => {
 
     return (
         <motion.nav
-            animate={{ opacity: show ? 1 : 0, y: show ? 0 : -20 }}
+            animate={{ opacity: show ? 1 : 0/*, y: show ? 0 : -20*/ }}
             transition={{ duration: 0.25, ease: "easeOut" }}
             className="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-gray-100"
         >
@@ -46,7 +46,7 @@ const Navbar = () => {
     );
 };
 
-const NavLink = ({ to, children }) => (
+const NavLink = ({to, children}) => (
     <Link
         to={to}
         onClick={() => window.scrollTo(0, 0)}
