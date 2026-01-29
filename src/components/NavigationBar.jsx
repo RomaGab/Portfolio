@@ -36,10 +36,16 @@ const Navbar = () => {
                         to="/"
                         onClick={() => window.scrollTo(0, 0)}
                     >
-                        {firstName} {lastName.charAt(0).toUpperCase()}.
+                        <div className="flex items-center gap-[15px]">
+                            <img className="footer-logo"
+                                src={profile.profilePicture.icon}
+                                alt={profile.profilePicture.alt}
+                            />
+                            {firstName} {lastName.charAt(0).toUpperCase()}.
+                        </div>
                     </Link>
                     <div className="flex items-center space-x-8">
-                        <SearchBar/>
+                        {/* <SearchBar/> */}
                         <NavLink to="/work">Work</NavLink>
                         <NavLink to="/about">About</NavLink>
                         <NavLink

@@ -9,9 +9,9 @@ const Footer = () => {
             <div className="footer-container">
                 <div className="footer-column logo-column">
                     <img className="footer-logo"
-                    src={profile.profilePicture.icon}
-                    alt={profile.profilePicture.alt}
-                />
+                        src={profile.profilePicture.icon}
+                        alt={profile.profilePicture.alt}
+                    />
                 </div>
                 <div className="footer-column">
                     <h3>Projects</h3>
