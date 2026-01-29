@@ -10,13 +10,6 @@ import RefractedLayer from './RefractedLayer';
 import profile from "../../data/profile.json"
 
 const Hero = () => {
-    // const scrollToProjects = (e) => {
-    //     e.preventDefault();
-    //     const projectsSection = document.querySelector("#projects");
-    //     if (projectsSection) {
-    //         projectsSection.scrollIntoView({ behavior: "smooth" });
-    //     }
-    // };
     const [firstName, lastName] = profile.name.split(' ');
 
     return (
@@ -44,15 +37,6 @@ const Hero = () => {
                     <CustomButton className="mt-[35px]" title={"Contact me"} to={profile.contact} icon={FaLinkedinIn}/>
                 </div>
             </motion.div>
-            {/* <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 1, duration: 1 }}
-                className="relative z-20 mt-[70px] animate-bounce pointer-events-auto">
-                <a href="#projects" onClick={scrollToProjects}>
-                    <ArrowDown className="w-6 h-6 text-slate-400"/>
-                </a>
-            </motion.div> */}
         </section>
     );
 };

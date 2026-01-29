@@ -4,12 +4,12 @@ const Award = ({ awards }) => {
     if (!awards || awards.length === 0) return null;
 
     return (
-        <div className="absolute bottom-4 right-4 flex gap-2 p-2 
-                        bg-slate-900/40 backdrop-blur-md rounded-xl 
+        <div className="absolute bottom-4 right-4 flex gap-2 p-2
+                        bg-slate-900/40 backdrop-blur-md rounded-xl
                         border border-white/10 shadow-2xl z-30">
             {awards.map((award, index) => (
-                <motion.a 
-                    key={index} 
+                <motion.a
+                    key={index}
                     href={award.link}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -22,7 +22,7 @@ const Award = ({ awards }) => {
                     className="relative cursor-pointer"
                     title={award.title}
                 >
-                    <img 
+                    <img
                         src={award.icon}
                         alt={award.title}
                         className="w-[32px] h-[32px] object-contain drop-shadow-md"

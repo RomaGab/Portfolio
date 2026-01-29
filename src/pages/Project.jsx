@@ -1,14 +1,30 @@
 import { useParams, Link } from 'react-router-dom';
 import { motion, useMotionValue, useTransform, useSpring, AnimatePresence } from 'framer-motion';
 import { HiChevronLeft, HiChevronRight, HiChevronDown } from "react-icons/hi2";
+import { useState } from 'react';
 
 import Award from '../components/Award'
 import projects from '../../data/projects.json';
+
+const NavButton = ({ project, direction, setDirection, icon: Icon, positionClasses }) => (
+    <div className={`fixed z-50 ${positionClasses} md:top-1/2 md:bottom-auto md:-translate-y-1/2`}>
+        <Link to={`/project/${project.id}`} onClick={() => setDirection(direction)}>
+            <motion.div
+                whileHover={{ x: direction * 5 }}
+                whileTap={{ scale: 0.9 }}
+                className="p-3 md:p-4 rounded-full border border-slate-200 bg-white/80 backdrop-blur-md text-slate-500 hover:text-blue-600 shadow-lg cursor-pointer transition-colors"
+            >
+                <Icon className="w-6 h-6 md:w-8 md:h-8" />
+            </motion.div>
+        </Link>
+    </div>
+);
 
 const Project = () => {
     const { id } = useParams();
     const currentIndex = projects.findIndex((p) => p.id === id);
     const project = projects[currentIndex];
+    const [direction, setDirection] = useState(0);
 
     const prevProject = currentIndex === 0
         ? projects[projects.length - 1]
@@ -51,27 +67,28 @@ const Project = () => {
     return (
         <div className="flex flex-col items-center w-full min-h-screen bg-white overflow-x-hidden">
             <nav className="z-50">
-                <div className="fixed bottom-6 left-6 md:top-1/2 md:bottom-auto md:left-4 lg:left-8 md:-translate-y-1/2">
-                    <Link to={`/project/${prevProject.id}`}>
-                        <motion.div whileHover={{ x: -5 }} whileTap={{ scale: 0.9 }} className="p-3 md:p-4 rounded-full border border-slate-200 bg-white/80 backdrop-blur-md text-slate-500 hover:text-blue-600 shadow-lg cursor-pointer">
-                            <HiChevronLeft className="w-6 h-6 md:w-8 md:h-8" />
-                        </motion.div>
-                    </Link>
-                </div>
-                <div className="fixed bottom-6 right-6 md:top-1/2 md:bottom-auto md:right-4 lg:right-8 md:-translate-y-1/2">
-                    <Link to={`/project/${nextProject.id}`}>
-                        <motion.div whileHover={{ x: 5 }} whileTap={{ scale: 0.9 }} className="p-3 md:p-4 rounded-full border border-slate-200 bg-white/80 backdrop-blur-md text-slate-500 hover:text-blue-600 shadow-lg cursor-pointer">
-                            <HiChevronRight className="w-6 h-6 md:w-8 md:h-8" />
-                        </motion.div>
-                    </Link>
-                </div>
+                <NavButton
+                    project={prevProject}
+                    direction={-1}
+                    setDirection={setDirection}
+                    icon={HiChevronLeft}
+                    positionClasses="bottom-6 left-6 md:left-4 lg:left-8"
+                />
+                <NavButton
+                    project={nextProject}
+                    direction={1}
+                    setDirection={setDirection}
+                    icon={HiChevronRight}
+                    positionClasses="bottom-6 right-6 md:right-4 lg:right-8"
+                />
             </nav>
-            <AnimatePresence mode="wait" initial={false}>
+            <AnimatePresence mode="wait" initial={false} custom={direction}>
                 <motion.div
                     key={id}
-                    initial={{ opacity: 0, x: 20 }}
+                    initial={{ opacity: 0, x: direction * 20 }}
                     animate={{ opacity: 1, x: 0 }}
-                    exit={{ opacity: 0, x: -20 }}
+                    exit={{ opacity: 0, x: direction * -20 }}
+                    custom={direction}
                     transition={{ duration: 0.2, ease: "easeInOut" }}
                     className="w-full flex flex-col items-center"
                 >

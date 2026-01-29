@@ -16,7 +16,7 @@ const TagFilter = ({ allTags, selectedTags, availableTags, onToggle, onClear }) 
                     />
                 ))}
             </div>
-            <div className="h-6 flex items-center justify-center"> 
+            <div className="h-6 flex items-center justify-center">
                 <AnimatePresence mode="popLayout" initial={false}>
                     {selectedTags.length > 0 && (
                         <motion.button

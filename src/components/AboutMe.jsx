@@ -14,7 +14,7 @@ import profile from '../../data/profile.json';
 
 //             <div className="flex flex-col gap-4 text-slate-200">
 //                 <p className="text-lg">I am {profile.name}</p>
-                
+
 //                 {/* break-words permet de casser les lignes même sans espaces */}
 //                 <p className="text-base md:text-lg leading-relaxed break-words overflow-hidden">
 //                     bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
