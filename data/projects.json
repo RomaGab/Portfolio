@@ -11,15 +11,15 @@
         ],
         "startDate": "Sep 2024",
         "endDate": "May 2025",
-        "additionalInfo": "Hee Hee",
+        "additionalInfo": "Groupe of 20",
         "awards": [
             {
-                "icon": "assets/awards/pegases.png",
+                "icon": "/assets/awards/pegases.png",
                 "title": "Pégases 2026 | Best Student Video Game - Nominee",
                 "link": "https://academiejeuvideo.org/"
             },
             {
-                "icon": "assets/awards/rookies.png",
+                "icon": "/assets/awards/rookies.png",
                 "title": "Rookie Awards 2025 | Rookie of the Year - Finalist",
                 "link": "https://www.therookies.co/entries/39384"
             }
@@ -37,7 +37,7 @@
         ],
         "startDate": "Sep 2025",
         "endDate": "Sep 2025",
-        "additionalInfo": "Hee Hee",
+        "additionalInfo": "Groupe of 4",
         "awards": [ ]
     },
     {
@@ -52,7 +52,7 @@
         ],
         "startDate": "Sep 2025",
         "endDate": "Sep 2025",
-        "additionalInfo": "Hee Hee",
+        "additionalInfo": "Groupe of 6",
         "awards": [ ]
     }
 ]
