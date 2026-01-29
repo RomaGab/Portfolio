@@ -1,6 +1,7 @@
 [
     {
         "name": "Roller Loop",
+        "id": "1",
         "thumbnail": "https://d3stdg5so273ei.cloudfront.net/AntoineLecca/2025-06-17/219168/1400xAUTO/AFFICHEROLLERLOOP_A0_PAYSAGE_RVB%2B%25281%2529-min-AntoineLecca-crop.jpg",
         "description": "Les surfers",
         "category": "Racing Game",
@@ -10,15 +11,15 @@
         ],
         "startDate": "Sep 2024",
         "endDate": "May 2025",
-        "additionalInfo": "Hee Hee",
+        "additionalInfo": "Groupe of 20",
         "awards": [
             {
-                "icon": "public/assets/awards/pegases.png",
-                "title": "Pégases 2026 | Best Student Video Game - Nominee",
+                "icon": "/assets/awards/pegases.png",
+                "title": "Pégases 2026 | Best Student Video Game - Contender",
                 "link": "https://academiejeuvideo.org/"
             },
             {
-                "icon": "public/assets/awards/rookies.png",
+                "icon": "/assets/awards/rookies.png",
                 "title": "Rookie Awards 2025 | Rookie of the Year - Finalist",
                 "link": "https://www.therookies.co/entries/39384"
             }
@@ -26,6 +27,7 @@
     },
     {
         "name": "Transatlantique",
+        "id": "2",
         "thumbnail": "https://lh3.googleusercontent.com/sitesv/APaQ0SRLZkUkdfuPuwovGGdHtxRW4B9tCC7W89zqTWo6a0R-BODXq4Vj4yWHDzJt7cnGcGaEBDXB0girCd1id2uLlt_EBjOK4Bg-cq82dp93lSXwqco4uDUQX9A5lB-MLZjrLR3DM1n5694bzYK1HLiaM0ZMGm5jE8hI5WCX2wOJzRXH8NHJ-W5Y-qs9DoE=w16383",
         "description": "Les surfers",
         "category": "Action Narration",
@@ -35,11 +37,12 @@
         ],
         "startDate": "Sep 2025",
         "endDate": "Sep 2025",
-        "additionalInfo": "Hee Hee",
+        "additionalInfo": "Groupe of 4",
         "awards": [ ]
     },
     {
         "name": "Hot On The Trail",
+        "id": "3",
         "thumbnail": "https://img.itch.zone/aW1hZ2UvMTk3NTc2OS8xMTYxOTMzNi5wbmc=/original/ktKf1s.png",
         "description": "Les surfers",
         "category": "Platformer",
@@ -49,7 +52,7 @@
         ],
         "startDate": "Sep 2025",
         "endDate": "Sep 2025",
-        "additionalInfo": "Hee Hee",
+        "additionalInfo": "Groupe of 6",
         "awards": [ ]
     }
 ]

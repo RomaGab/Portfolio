@@ -43,7 +43,6 @@ const CustomButton = ({ title, to, icon: Icon = HiArrowRight, className }) => {
             >
                 <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
                 <span className="relative z-10 tracking-tight">{title}</span>
-                {/* <Icon className="relative z-10 text-xl group-hover:translate-x-1.5 transition-transform duration-300 ease-out" /> */}
             </Link>
         </motion.div>
     );

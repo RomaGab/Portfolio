@@ -1,8 +1,7 @@
 #root {
-    /* max-width: 1280px; */
     margin: 0 auto;
-    /* padding: 2rem; */
     text-align: center;
+    background-color: white;
 }
 
 .title {
@@ -13,15 +12,14 @@
 }
 
 .refraction-container {
-  /* Cette classe permet de superposer les backgrounds parfaitement */
-  display: grid;
-  grid-template-areas: "stack";
+    display: grid;
+    grid-template-areas: "stack";
 }
 
 .refraction-layer {
-  grid-area: stack;
-  width: 100%;
-  height: 100%;
+    grid-area: stack;
+    width: 100%;
+    height: 100%;
 }
 
 /* .logo {
@@ -254,8 +252,8 @@ from {
 
 .footer {
     background-color: #ffffff;
-    padding: 60px 20px;
-    font-family: 'Inter', sans-serif;
+    padding: 60px 0px;
+    /* font-family: 'Inter', sans-serif; */
     width: 100%;
 }
 

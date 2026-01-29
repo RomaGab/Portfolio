@@ -9,9 +9,9 @@ const Footer = () => {
             <div className="footer-container">
                 <div className="footer-column logo-column">
                     <img className="footer-logo"
-                    src={profile.profilePicture.icon}
-                    alt={profile.profilePicture.alt}
-                />
+                        src={profile.profilePicture.icon}
+                        alt={profile.profilePicture.alt}
+                    />
                 </div>
                 <div className="footer-column">
                     <h3>Projects</h3>
@@ -34,9 +34,9 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-                <div className="bg-white py-12 text-center text-slate-400 text-sm border-t border-gray-100">
-                    <p>© {new Date().getFullYear()} {profile.name}. All rights reserved.</p>
-                </div>
+            <div className="bg-white py-12 text-center text-slate-400 text-sm border-t border-gray-100">
+                <p>© {new Date().getFullYear()} {profile.name}. All rights reserved.</p>
+            </div>
         </footer>
     );
 };

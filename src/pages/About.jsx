@@ -8,7 +8,7 @@ import profile from '../../data/profile.json';
 
 const About = () => {
     return (
-        <div className="flex flex-col items-center gap-[50px] w-full py-20">
+        <div className="flex flex-col items-center gap-[50px] w-full py-20 mt-[100px]">
             <img className="profile-picture"
                 src={profile.profilePicture.icon}
                 alt={profile.profilePicture.alt}

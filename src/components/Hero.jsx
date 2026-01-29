@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowDown } from 'lucide-react';
+// import { ArrowDown } from 'lucide-react';
 import { FaLinkedinIn } from 'react-icons/fa';
 
 import ScrollingText from './ScrollingText';
@@ -10,14 +10,6 @@ import RefractedLayer from './RefractedLayer';
 import profile from "../../data/profile.json"
 
 const Hero = () => {
-
-    const scrollToProjects = (e) => {
-        e.preventDefault();
-        const projectsSection = document.querySelector("#projects");
-        if (projectsSection) {
-            projectsSection.scrollIntoView({ behavior: "smooth" });
-        }
-    };
     const [firstName, lastName] = profile.name.split(' ');
 
     return (
@@ -31,7 +23,7 @@ const Hero = () => {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, ease: "easeOut" }}
-                className="relative z-20 max-w-4xl mt-[150px] pointer-events-none"
+                className="relative z-20 max-w-4xl pointer-events-none"
             >
                 <div className="pointer-events-auto">
                     <h1 className="text-5xl md:text-7xl font-bold text-slate-900 mb-6 tracking-tight">
@@ -44,15 +36,6 @@ const Hero = () => {
                     </p>
                     <CustomButton className="mt-[35px]" title={"Contact me"} to={profile.contact} icon={FaLinkedinIn}/>
                 </div>
-            </motion.div>
-            <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 1, duration: 1 }}
-                className="relative z-20 mt-[70px] animate-bounce pointer-events-auto">
-                <a href="#projects" onClick={scrollToProjects}>
-                    <ArrowDown className="w-6 h-6 text-slate-400"/>
-                </a>
             </motion.div>
         </section>
     );
