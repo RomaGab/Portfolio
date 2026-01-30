@@ -41,7 +41,7 @@ const CustomButton = ({ title, to, icon: Icon = HiArrowRight, className }) => {
                     overflow-hidden
                 `}
             >
-                <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
+                <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"/>
                 <span className="relative z-10 tracking-tight">{title}</span>
             </Link>
         </motion.div>

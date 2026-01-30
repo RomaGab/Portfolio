@@ -17,7 +17,7 @@ const Footer = () => {
                     <h3>Projects</h3>
                     <ul>
                         {projects.map((project) => (
-                            <li><a href="#games">{project.name}</a></li>
+                            <li><a href={`/project/${project.id}`}>{project.name}</a></li>
                         ))}
                     </ul>
                 </div>

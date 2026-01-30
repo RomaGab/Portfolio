@@ -26,7 +26,7 @@ const Timeline = ({title, data}) => {
                                 {item.subtitle}
                                 {item.contract && ` • ${item.contract}`}
                             </p>
-                            <p className="m-0 text-[#666] text-sm">{item.startDate} - {item.endDate}</p>
+                            <p className="m-0 text-[#666] text-sm">{item.startDate} — {item.endDate}</p>
                             <p className="m-0 text-[#666] text-sm">{item.city}, {item.country}</p>
                             {item.skills && item.skills.length > 0 && (
                                 <div className="flex items-start gap-[10px] mt-[10px] mb-[25px]">

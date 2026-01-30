@@ -62,7 +62,7 @@ const Work = () => {
             <div className="flex relative flex-col items-center gap-[50px]">
                 <div className="flex flex-col items-center gap-[50px] mb-[75px] p-8 text-center w-full max-w-7xl">
                     <h1 id="projects" className="text-[50px] font-bold text-slate-900">
-                        My Work
+                        My Projects
                     </h1>
                     <TagFilter
                         allTags={allTags}
@@ -83,7 +83,7 @@ const Work = () => {
                                         opacity: 0,
                                         scale: 0.9,
                                         zIndex: 0,
-                                        transition: { duration: 0.2 } 
+                                        transition: { duration: 0.2 }
                                     }}
                                     transition={{
                                         type: "spring",
@@ -94,7 +94,7 @@ const Work = () => {
                                     className="h-full flex flex-col"
                                 >
                                     <div className="h-full w-full overflow-hidden flex flex-col">
-                                        <ProjectCard project={project} />
+                                        <ProjectCard project={project}/>
                                     </div>
                                 </motion.div>
                             ))}

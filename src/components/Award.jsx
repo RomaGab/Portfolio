@@ -13,6 +13,7 @@ const Award = ({ awards }) => {
                     href={award.link}
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={(e) => e.stopPropagation()}
                     whileHover={{
                         scale: 1.2,
                         rotate: 5,
@@ -27,7 +28,7 @@ const Award = ({ awards }) => {
                         alt={award.title}
                         className="w-[32px] h-[32px] object-contain drop-shadow-md"
                     />
-                    <div className="absolute inset-0 bg-white/20 blur-md opacity-0 hover:opacity-100 transition-opacity rounded-full" />
+                    <div className="absolute inset-0 bg-white/20 blur-md opacity-0 hover:opacity-100 transition-opacity rounded-full"/>
                 </motion.a>
             ))}
         </div>

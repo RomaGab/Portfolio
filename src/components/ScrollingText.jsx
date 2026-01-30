@@ -7,7 +7,7 @@ const ScrollingText = ({roles}) => {
     useEffect(() => {
         const timer = setInterval(() => {
             setIndex((prevIndex) => (prevIndex + 1) % roles.length);
-        }, 4000);
+        }, 3000);
         return () => clearInterval(timer);
     });
 

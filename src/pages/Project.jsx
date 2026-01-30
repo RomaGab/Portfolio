@@ -1,7 +1,7 @@
 import { useParams, Link } from 'react-router-dom';
 import { motion, useMotionValue, useTransform, useSpring, AnimatePresence } from 'framer-motion';
 import { HiChevronLeft, HiChevronRight, HiChevronDown } from "react-icons/hi2";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import Award from '../components/Award'
 import projects from '../../data/projects.json';
@@ -12,15 +12,22 @@ const NavButton = ({ project, direction, setDirection, icon: Icon, positionClass
             <motion.div
                 whileHover={{ x: direction * 5 }}
                 whileTap={{ scale: 0.9 }}
-                className="p-3 md:p-4 rounded-full border border-slate-200 bg-white/80 backdrop-blur-md text-slate-500 hover:text-blue-600 shadow-lg cursor-pointer transition-colors"
+                className="p-3 md:p-4 rounded-full border border-slate-200 bg-white/80 backdrop-blur-md text-slate-500 hover:text-blue-600 hover:border-blue-600 shadow-lg cursor-pointer transition-colors"
             >
-                <Icon className="w-6 h-6 md:w-8 md:h-8" />
+                <Icon className="w-6 h-6 md:w-8 md:h-8"/>
             </motion.div>
         </Link>
     </div>
 );
 
 const Project = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+        if ('scrollRestoration' in window.history) {
+            window.history.scrollRestoration = 'manual';
+        }
+    }, []);
+
     const { id } = useParams();
     const currentIndex = projects.findIndex((p) => p.id === id);
     const project = projects[currentIndex];
@@ -108,7 +115,7 @@ const Project = () => {
                                     src={project.thumbnail}
                                     alt={project.name}
                                 />
-                                <div className="absolute inset-0 bg-black/20" />
+                                <div className="absolute inset-0 bg-black/20"/>
                                 <motion.h1
                                     animate={{ y: [0, -10, 0], opacity: [0.9, 1, 0.9] }}
                                     transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
@@ -120,8 +127,8 @@ const Project = () => {
                             <Award awards={project.awards}/>
                             <div className="absolute inset-x-0 bottom-10 flex justify-center z-30 pointer-events-none">
                                 <motion.div className="pointer-events-auto">
-                                    <button onClick={scrollToDescription} className="p-3 rounded-full bg-white/10 backdrop-blur-md border border-white/20 shadow-2xl animate-bounce flex items-center justify-center cursor-pointer">
-                                        <HiChevronDown className="w-5 h-5 md:w-6 md:h-6 text-white" />
+                                    <button onClick={scrollToDescription} className="p-3 rounded-full bg-white/10 backdrop-blur-md border border-white/20 shadow-2xl animate-bounce flex items-center justify-center cursor-pointer hover:border-white transition-colors">
+                                        <HiChevronDown className="w-5 h-5 md:w-6 md:h-6 text-white"/>
                                     </button>
                                 </motion.div>
                             </div>

@@ -2,38 +2,80 @@
     {
         "name": "Roller Loop",
         "id": "1",
-        "thumbnail": "https://d3stdg5so273ei.cloudfront.net/AntoineLecca/2025-06-17/219168/1400xAUTO/AFFICHEROLLERLOOP_A0_PAYSAGE_RVB%2B%25281%2529-min-AntoineLecca-crop.jpg",
+        "thumbnail": "/assets/projects/RollerLoop/thumbnail.png",
         "description": "Les surfers",
-        "category": "Racing Game",
+        "category": "Video Game",
         "tags": [
             "C++",
-            "Unreal Engine"
+            "Unreal Engine",
+            "Video Game",
+            "UI/UX"
         ],
         "startDate": "Sep 2024",
         "endDate": "May 2025",
         "additionalInfo": "Groupe of 20",
         "awards": [
             {
-                "icon": "/assets/awards/pegases.png",
-                "title": "Pégases 2026 | Best Student Video Game - Contender",
-                "link": "https://academiejeuvideo.org/"
-            },
-            {
                 "icon": "/assets/awards/rookies.png",
                 "title": "Rookie Awards 2025 | Rookie of the Year - Finalist",
                 "link": "https://www.therookies.co/entries/39384"
             }
-        ]
+        ],
+        "pageContent":
+        {
+            "description": "",
+            "information": {
+                "": ""
+            },
+            "myRole": "",
+            "medias": [],
+            "myWork": "",
+            "galerie": {
+                "": []
+            },
+            "additionalLink": ""
+        }
+    },
+    {
+        "name": "Python Tools",
+        "id": "2",
+        "thumbnail": "/assets/projects/PythonTools/thumbnail.png",
+        "description": "Les surfers",
+        "category": "Tooling",
+        "tags": [
+            "Python",
+            "Tooling",
+            "UI/UX"
+        ],
+        "startDate": "Sep 2024",
+        "endDate": "May 2025",
+        "additionalInfo": "Groupe of 20",
+        "awards": [ ],
+        "pageContent":
+        {
+            "description": "",
+            "information": {
+                "": ""
+            },
+            "myRole": "",
+            "medias": [],
+            "myWork": "",
+            "galerie": {
+                "": []
+            },
+            "additionalLink": ""
+        }
     },
     {
         "name": "Transatlantique",
-        "id": "2",
-        "thumbnail": "https://lh3.googleusercontent.com/sitesv/APaQ0SRLZkUkdfuPuwovGGdHtxRW4B9tCC7W89zqTWo6a0R-BODXq4Vj4yWHDzJt7cnGcGaEBDXB0girCd1id2uLlt_EBjOK4Bg-cq82dp93lSXwqco4uDUQX9A5lB-MLZjrLR3DM1n5694bzYK1HLiaM0ZMGm5jE8hI5WCX2wOJzRXH8NHJ-W5Y-qs9DoE=w16383",
+        "id": "3",
+        "thumbnail": "/assets/projects/Transatlantique/thumbnail.png",
         "description": "Les surfers",
-        "category": "Action Narration",
+        "category": "Video Game",
         "tags": [
             "C++",
-            "Unreal Engine"
+            "Unreal Engine",
+            "Video Game"
         ],
         "startDate": "Sep 2025",
         "endDate": "Sep 2025",
@@ -41,14 +83,46 @@
         "awards": [ ]
     },
     {
-        "name": "Hot On The Trail",
-        "id": "3",
-        "thumbnail": "https://img.itch.zone/aW1hZ2UvMTk3NTc2OS8xMTYxOTMzNi5wbmc=/original/ktKf1s.png",
+        "name": "C# Tools",
+        "id": "4",
+        "thumbnail": "/assets/projects/CSTools/thumbnail.png",
         "description": "Les surfers",
-        "category": "Platformer",
+        "category": "Tooling",
         "tags": [
             "C#",
-            "Unity"
+            "Unity",
+            "Tooling",
+            "UI/UX"
+        ],
+        "startDate": "Sep 2024",
+        "endDate": "May 2025",
+        "additionalInfo": "Groupe of 20",
+        "awards": [ ],
+        "pageContent":
+        {
+            "description": "",
+            "information": {
+                "": ""
+            },
+            "myRole": "",
+            "medias": [],
+            "myWork": "",
+            "galerie": {
+                "": []
+            },
+            "additionalLink": ""
+        }
+    },
+    {
+        "name": "Hot On The Trail",
+        "id": "5",
+        "thumbnail": "/assets/projects/HotOnTheTrail/thumbnail.png",
+        "description": "Les surfers",
+        "category": "Video Game",
+        "tags": [
+            "C#",
+            "Unity",
+            "Video Game"
         ],
         "startDate": "Sep 2025",
         "endDate": "Sep 2025",

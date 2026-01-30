@@ -16,17 +16,18 @@ const TagFilter = ({ allTags, selectedTags, availableTags, onToggle, onClear }) 
                     />
                 ))}
             </div>
-            <div className="h-6 flex items-center justify-center">
-                <AnimatePresence mode="popLayout" initial={false}>
+            <div className="h-6 flex items-center justify-center relative">
+                <AnimatePresence initial={false}>
                     {selectedTags.length > 0 && (
                         <motion.button
-                            layout
-                            initial={{ opacity: 0, y: -10 }}
+                            key="clear-filters-btn"
+                            initial={{ opacity: 0, y: -5 }}
                             animate={{ opacity: 1, y: 0 }}
-                            exit={{ opacity: 0, y: -10 }}
-                            transition={{ type: "spring", stiffness: 500, damping: 30 }}
+                            exit={{ opacity: 0, y: -5 }}
+                            style={{ position: "relative" }}
+                            transition={{ type: "spring", stiffness: 400, damping: 25 }}
                             onClick={onClear}
-                            className="text-sm text-red-500 hover:text-red-700 font-semibold underline underline-offset-4 transition-colors"
+                            className="text-sm text-red-500 hover:text-red-700 font-semibold underline underline-offset-4"
                         >
                             Clear all filters
                         </motion.button>
