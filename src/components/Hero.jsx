@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-// import { ArrowDown } from 'lucide-react';
+import { TbZoom } from "react-icons/tb";
 import { FaLinkedinIn } from 'react-icons/fa';
 
 import ScrollingText from './ScrollingText';
@@ -25,7 +25,7 @@ const Hero = () => {
                 transition={{ duration: 1, ease: "easeOut" }}
                 className="relative z-20 max-w-4xl pointer-events-none"
             >
-                <div className="pointer-events-auto">
+                <div className="pointer-events-auto flex flex-col items-center">
                     <h1 className="text-5xl md:text-7xl font-bold text-slate-900 mb-6 tracking-tight">
                         {firstName} <br/>
                         <span className="text-blue-600">{lastName.toUpperCase()}</span>
@@ -34,7 +34,19 @@ const Hero = () => {
                     <p className="text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
                         Optimizing workflows and <span className="text-blue-600">empowering teams</span> through custom development and automated engineering operations.
                     </p>
-                    <CustomButton className="mt-[35px]" title={"Contact me"} to={profile.contact} icon={FaLinkedinIn}/>
+                    <div className='flex flex-row gap-[15px]'>
+                        <CustomButton className="mt-[35px]"
+                            title={"Projects"}
+                            to={"/work"}
+                            icon={TbZoom}
+                        />
+                        <CustomButton className="mt-[35px]"
+                            title={"Contact me"}
+                            to={profile.contact}
+                            icon={FaLinkedinIn}
+                            external={true}
+                        />
+                    </div>
                 </div>
             </motion.div>
         </section>

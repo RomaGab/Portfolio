@@ -2,12 +2,12 @@ import { useParams, Link } from 'react-router-dom';
 import { motion, useMotionValue, useTransform, useSpring, AnimatePresence } from 'framer-motion';
 import { HiChevronLeft, HiChevronRight, HiChevronDown } from "react-icons/hi2";
 import { useState, useEffect } from 'react';
+import { FaArrowRightLong } from "react-icons/fa6";
 
 import CustomButton from "../components/CustomButton"
 import Award from '../components/Award'
 import Carousel from '../components/Carousel';
 import TagGrid from "../components/TagGrid";
-
 import projects from '../../data/projects.json';
 
 const NavButton = ({ project, direction, setDirection, icon: Icon, positionClasses }) => (
@@ -16,7 +16,7 @@ const NavButton = ({ project, direction, setDirection, icon: Icon, positionClass
             <motion.div
                 whileHover={{ x: direction * 5 }}
                 whileTap={{ scale: 0.9 }}
-                className="p-3 md:p-4 rounded-full border border-slate-200 bg-white/80 backdrop-blur-md text-slate-500 hover:text-blue-600 hover:border-blue-600 shadow-lg cursor-pointer transition-colors"
+                className="p-3 md:p-4 rounded-full border border-slate-200 bg-white/80 backdrop-blur-md text-slate-500 hover:text-blue-600 hover:border-blue-600 cursor-pointer transition-colors"
             >
                 <Icon className="w-6 h-6 md:w-8 md:h-8"/>
             </motion.div>
@@ -45,6 +45,17 @@ const ProjectVideo = ({ url }) => {
     );
 };
 
+const Title = ({ title }) => (
+    <h3 className="text-xl font-bold text-slate-800 mb-4 tracking-wider text-sm text-left uppercase">{title}</h3>
+);
+
+const Box = ({ title, content }) => (
+    <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100 shadow-sm">
+        <Title title={title}/>
+        {content}
+    </div>
+);
+
 const Project = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -58,17 +69,11 @@ const Project = () => {
     const project = projects[currentIndex];
     const [direction, setDirection] = useState(0);
 
-    const prevProject = currentIndex === 0
-        ? projects[projects.length - 1]
-        : projects[currentIndex - 1];
-
-    const nextProject = currentIndex === projects.length - 1
-        ? projects[0]
-        : projects[currentIndex + 1];
+    const prevProject = currentIndex === 0 ? projects[projects.length - 1] : projects[currentIndex - 1];
+    const nextProject = currentIndex === projects.length - 1 ? projects[0] : projects[currentIndex + 1];
 
     const mouseX = useMotionValue(0);
     const mouseY = useMotionValue(0);
-
     const springConfig = { stiffness: 100, damping: 30 };
     const dx = useSpring(mouseX, springConfig);
     const dy = useSpring(mouseY, springConfig);
@@ -88,33 +93,23 @@ const Project = () => {
 
     const scrollToDescription = (e) => {
         e.preventDefault();
-        const target = document.querySelector("#description");
+        const target = document.querySelector("#description-section");
         if (target) {
-            target.scrollIntoView({ behavior: "smooth", block: "start" });
+            const offset = 100;
+            const bodyRect = document.body.getBoundingClientRect().top;
+            const elementRect = target.getBoundingClientRect().top;
+            window.scrollTo({ top: elementRect - bodyRect - offset, behavior: "smooth" });
         }
     };
 
     if (!project) return <div className="text-center mt-20 font-bold">Projet introuvable</div>;
-
     const content = project.pageContent;
 
     return (
         <div className="flex flex-col items-center w-full min-h-screen bg-white overflow-x-hidden">
             <nav className="z-50">
-                <NavButton
-                    project={prevProject}
-                    direction={-1}
-                    setDirection={setDirection}
-                    icon={HiChevronLeft}
-                    positionClasses="bottom-6 left-6 md:left-4 lg:left-8"
-                />
-                <NavButton
-                    project={nextProject}
-                    direction={1}
-                    setDirection={setDirection}
-                    icon={HiChevronRight}
-                    positionClasses="bottom-6 right-6 md:right-4 lg:right-8"
-                />
+                <NavButton project={prevProject} direction={-1} setDirection={setDirection} icon={HiChevronLeft} positionClasses="bottom-6 left-6 md:left-4 lg:left-8" />
+                <NavButton project={nextProject} direction={1} setDirection={setDirection} icon={HiChevronRight} positionClasses="bottom-6 right-6 md:right-4 lg:right-8" />
             </nav>
             <AnimatePresence mode="wait" initial={false} custom={direction}>
                 <motion.div
@@ -122,28 +117,23 @@ const Project = () => {
                     initial={{ opacity: 0, x: direction * 20 }}
                     animate={{ opacity: 1, x: 0 }}
                     exit={{ opacity: 0, x: direction * -20 }}
-                    custom={direction}
-                    transition={{ duration: 0.2, ease: "easeInOut" }}
-                    className="w-full flex flex-col items-center"
+                    transition={{ duration: 0.2 }}
+                    className="w-full flex flex-col items-center pb-20"
                 >
                     <section className="relative w-full max-w-6xl px-4 md:px-8 mt-24 md:mt-32 mb-12">
                         <div
                             onMouseMove={handleMouseMove}
                             onMouseLeave={() => { mouseX.set(0); mouseY.set(0); }}
-                            className="relative w-full aspect-video rounded-[24px] md:rounded-[32px] overflow-hidden shadow-[0_30px_60px_-15px_rgba(0,0,0,0.1)] border border-slate-100 bg-slate-50"
+                            className="relative w-full aspect-video rounded-[24px] md:rounded-[32px] overflow-hidden border border-slate-100 bg-slate-50"
                             style={{ perspective: "1500px" }}
                         >
                             <motion.div
                                 style={{ x: translateX, y: translateY, rotateX, rotateY, scale: 1.05 }}
                                 className="relative w-full h-full flex items-center justify-center"
                             >
-                                <img
-                                    className="absolute inset-0 w-full h-full object-cover select-none pointer-events-none"
-                                    src={project.thumbnail}
-                                    alt={project.name}
-                                />
+                                <img className="absolute inset-0 w-full h-full object-cover select-none" src={project.thumbnail} alt={project.name} />
                                 <div className="absolute inset-0 bg-black/20"/>
-                                <motion.h1
+                                <motion.h1 
                                     animate={{ y: [0, -10, 0], opacity: [0.9, 1, 0.9] }}
                                     transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
                                     className="relative z-10 text-3xl md:text-8xl font-bold text-white tracking-tight drop-shadow-2xl px-4 text-center"
@@ -152,67 +142,80 @@ const Project = () => {
                                 </motion.h1>
                             </motion.div>
                             <Award awards={project.awards}/>
-                            <div className="absolute inset-x-0 bottom-10 flex justify-center z-30 pointer-events-none">
-                                <motion.div className="pointer-events-auto">
-                                    <button onClick={scrollToDescription} className="p-3 rounded-full bg-white/10 backdrop-blur-md border border-white/20 shadow-2xl animate-bounce flex items-center justify-center cursor-pointer hover:border-white transition-colors">
-                                        <HiChevronDown className="w-5 h-5 md:w-6 md:h-6 text-white"/>
-                                    </button>
-                                </motion.div>
+                            <div className="absolute inset-x-0 bottom-10 flex justify-center z-30">
+                                <button onClick={scrollToDescription} className="p-3 rounded-full bg-white/10 backdrop-blur-md border border-white/20 shadow-2xl animate-bounce text-white">
+                                    <HiChevronDown className="w-5 h-5 md:w-6 md:h-6"/>
+                                </button>
                             </div>
                         </div>
                     </section>
-                    <div className="flex flex-row justify-between gap-[50px]">
-                        <div className='flex flex-col gap-[50px]'>
-                            <div className=''>
-                                <h3 className="">Description</h3>
-                                <p id="description" className="scroll-mt-32">
-                                    {project.description}
-                                </p>
-                            </div>
+                    <div id="description-section" className="w-full max-w-6xl px-4 md:px-8 mx-auto flex flex-col lg:flex-row items-start gap-12 lg:gap-16">
+                        <div className='w-full lg:w-2/3 flex flex-col gap-12'>
+                            <Box title={"Description"}
+                                content={
+                                    <p className="text-slate-600 leading-relaxed text-lg text-justify whitespace-pre-line">
+                                        {content.description}
+                                    </p>
+                                }
+                            />
                             {content.videos && (
-                                <div className=''>
-                                    <h3 className="">Videos</h3>
-                                    <div className="flex flex-row gap-[10px]">
-                                        {content.videos.map((mediaUrl, index) => (
-                                            <ProjectVideo key={index} url={mediaUrl}/>
-                                        ))}
-                                    </div>
-                                </div>
+                                <Box title={"Videos"}
+                                    content={
+                                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                            {content.videos.map((url, i) => <ProjectVideo key={i} url={url}/>)}
+                                        </div>
+                                    }
+                                />
                             )}
                         </div>
-                        <div className='flex flex-col gap-[50px]'>
-                            <div className="">
-                                <h3 className="">Information</h3>
-                                <div className="flex flex-col">
-                                    {content.information && Object.entries(content.information).map(([key, value]) => (
-                                        <div key={key} className='flex flex-row gap-[10px]'>
-                                            <span className="">{key}</span>
-                                            <span className="">{value}</span>
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-                            <div className="">
-                                <h3 className="">My Role</h3>
-                                <TagGrid tags={project.tags}/>
-                            </div>
+                        <div className='w-full lg:w-1/3 flex flex-col gap-5 h-fit lg:sticky lg:top-24'>
+                            <Box title={"Information"}
+                                content={
+                                    <div className="flex flex-col gap-4">
+                                        {content.information && Object.entries(content.information).map(([key, value]) => (
+                                            <div key={key} className='flex flex-row justify-between items-center'>
+                                                <span className="w-1/2 text-left text-slate-400 text-xs uppercase font-semibold">{key}</span>
+                                                <span className="w-1/2 flex-1 text-left text-slate-800 font-medium">{value}</span>
+                                            </div>
+                                        ))}
+                                    </div>
+                                }
+                            />
+                            <Box title={"Skills"}
+                                content={<TagGrid tags={content.skills}/>}
+                            />
                             {content.additionalLink && (
                                 <CustomButton
                                     title={content.additionalLink.title}
                                     to={content.additionalLink.link}
+                                    fullWidth={true}
+                                    external={true}
                                 />
                             )}
                         </div>
                     </div>
-                    <section className="p-10">
-                        <h3 className="">My Work</h3>
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-7xl mx-auto px-4">
-                            {Object.entries(content.galerie).map(([title, images], index) => (
-                                <div key={index} className="w-full">
-                                    <Carousel images={images} title={title} />
+                    <section className="w-full max-w-6xl px-4 md:px-8 mx-auto mt-10">
+                        <Box title={"My Work"}
+                            content={
+                                <div className='flex flex-col gap-[20px]'>
+                                    <div className="flex text-left flex-col gap-[10px]">
+                                        {content.myWork.map((text) => (
+                                            <div className='flex flex-row gap-[10px] items-center' >
+                                                <FaArrowRightLong />
+                                                <p>{text}</p>
+                                            </div>
+                                        ))}
+                                    </div>
+                                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
+                                        {Object.entries(content.galerie).map(([title, images], index) => (
+                                            <div key={index} className="w-full">
+                                                <Carousel images={images} title={title} />
+                                            </div>
+                                        ))}
+                                    </div>
                                 </div>
-                            ))}
-                        </div>
+                            }
+                        />
                     </section>
                 </motion.div>
             </AnimatePresence>

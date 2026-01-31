@@ -14,14 +14,36 @@
         "additionalInfo": "Groupe of 20",
         "pageContent":
         {
-            "description": "",
+            "description": "aaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaa aaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaa aaaaaaaaaa aaaaaaa",
             "information": {
-                "aaa": "bbbb",
-                "bbb": "cccc"
+                "Language": "React",
+                "Duration": "4 days"
             },
-            "myRole": "",
-            "myWork": "",
-            "galerie": []
+            "skills": [
+                "React",
+                "UI/UX"
+            ],
+            "myWork": [
+                "A",
+                "B"
+            ],
+            "galerie": {
+                "Title": [
+                    "/assets/projects/RollerLoop/thumbnail.png",
+                    "/assets/projects/PythonTools/thumbnail.png",
+                    "/assets/projects/RollerLoop/thumbnail.png"
+                ],
+                "AAA": [
+                    "/assets/projects/RollerLoop/thumbnail.png",
+                    "/assets/projects/PythonTools/thumbnail.png",
+                    "/assets/projects/RollerLoop/thumbnail.png"
+                ],
+                "BBB": [
+                    "/assets/projects/RollerLoop/thumbnail.png",
+                    "/assets/projects/PythonTools/thumbnail.png",
+                    "/assets/projects/RollerLoop/thumbnail.png"
+                ]
+            }
         }
     },
     {
@@ -48,17 +70,24 @@
         ],
         "pageContent":
         {
-            "description": "",
+            "description": "aaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaa aaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaa aaaaaaaaaa aaaaaaa",
             "information": {
                 "aaa": "bbbb",
                 "bbb": "cccc"
             },
-            "myRole": "",
+            "skills": [
+                "C++",
+                "Unreal Engine",
+                "UI/UX"
+            ],
             "videos": [
                 "https://www.youtube.com/watch?v=7W6yiaMJJ8I",
                 "https://www.youtube.com/watch?v=gNpHlL5NNq4"
             ],
-            "myWork": "",
+            "myWork": [
+                "A",
+                "B"
+            ],
             "galerie": {
                 "Title": [
                     "/assets/projects/RollerLoop/thumbnail.png",
@@ -77,7 +106,7 @@
                 ]
             },
             "additionalLink": {
-                "link": "",
+                "link": "https://isart-digital.itch.io/rollerloop",
                 "title": "Play on itch.io"
             }
         }
@@ -98,16 +127,37 @@
         "additionalInfo": "Groupe of 20",
         "pageContent":
         {
-            "description": "",
+            "description": "aaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaa aaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaa aaaaaaaaaa aaaaaaa",
             "information": {
-                "": ""
+                "aaa": "bbbb",
+                "bbb": "cccc"
             },
-            "myRole": "",
-            "myWork": "",
+            "skills": [
+                "Python",
+                "Tooling",
+                "UI/UX"
+            ],
+            "myWork": [
+                "A",
+                "B"
+            ],
             "galerie": {
-                "": []
-            },
-            "additionalLink": ""
+                "Title": [
+                    "/assets/projects/RollerLoop/thumbnail.png",
+                    "/assets/projects/PythonTools/thumbnail.png",
+                    "/assets/projects/RollerLoop/thumbnail.png"
+                ],
+                "AAA": [
+                    "/assets/projects/RollerLoop/thumbnail.png",
+                    "/assets/projects/PythonTools/thumbnail.png",
+                    "/assets/projects/RollerLoop/thumbnail.png"
+                ],
+                "BBB": [
+                    "/assets/projects/RollerLoop/thumbnail.png",
+                    "/assets/projects/PythonTools/thumbnail.png",
+                    "/assets/projects/RollerLoop/thumbnail.png"
+                ]
+            }
         }
     },
     {
@@ -119,11 +169,49 @@
         "tags": [
             "C++",
             "Unreal Engine",
-            "Video Game"
+            "Video Game",
+            "UI/UX"
         ],
         "startDate": "Jan 2024",
         "endDate": "Mar 2024",
-        "additionalInfo": "Groupe of 4"
+        "additionalInfo": "Groupe of 4",
+        "pageContent":
+        {
+            "description": "aaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaa aaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaa aaaaaaaaaa aaaaaaa",
+            "information": {
+                "aaa": "bbbb",
+                "bbb": "cccc"
+            },
+            "skills": [
+                "C++",
+                "Unreal Engine",
+                "UX"
+            ],
+            "videos": [
+                "https://www.youtube.com/watch?v=BSruIGTA_js"
+            ],
+            "myWork": [
+                "A",
+                "B"
+            ],
+            "galerie": {
+                "Title": [
+                    "/assets/projects/RollerLoop/thumbnail.png",
+                    "/assets/projects/PythonTools/thumbnail.png",
+                    "/assets/projects/RollerLoop/thumbnail.png"
+                ],
+                "AAA": [
+                    "/assets/projects/RollerLoop/thumbnail.png",
+                    "/assets/projects/PythonTools/thumbnail.png",
+                    "/assets/projects/RollerLoop/thumbnail.png"
+                ],
+                "BBB": [
+                    "/assets/projects/RollerLoop/thumbnail.png",
+                    "/assets/projects/PythonTools/thumbnail.png",
+                    "/assets/projects/RollerLoop/thumbnail.png"
+                ]
+            }
+        }
     },
     {
         "name": "C# Tools",
@@ -142,16 +230,38 @@
         "additionalInfo": "Groupe of 20",
         "pageContent":
         {
-            "description": "",
+            "description": "aaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaa aaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaa aaaaaaaaaa aaaaaaa",
             "information": {
-                "": ""
+                "aaa": "bbbb",
+                "bbb": "cccc"
             },
-            "myRole": "",
-            "myWork": "",
+            "skills": [
+                "C#",
+                "Unity",
+                "Tooling",
+                "UI/UX"
+            ],
+            "myWork": [
+                "A",
+                "B"
+            ],
             "galerie": {
-                "": []
-            },
-            "additionalLink": ""
+                "Title": [
+                    "/assets/projects/RollerLoop/thumbnail.png",
+                    "/assets/projects/PythonTools/thumbnail.png",
+                    "/assets/projects/RollerLoop/thumbnail.png"
+                ],
+                "AAA": [
+                    "/assets/projects/RollerLoop/thumbnail.png",
+                    "/assets/projects/PythonTools/thumbnail.png",
+                    "/assets/projects/RollerLoop/thumbnail.png"
+                ],
+                "BBB": [
+                    "/assets/projects/RollerLoop/thumbnail.png",
+                    "/assets/projects/PythonTools/thumbnail.png",
+                    "/assets/projects/RollerLoop/thumbnail.png"
+                ]
+            }
         }
     },
     {
@@ -163,10 +273,53 @@
         "tags": [
             "C#",
             "Unity",
-            "Video Game"
+            "Video Game",
+            "UI/UX"
         ],
         "startDate": "Jan 2023",
         "endDate": "Mar 2023",
-        "additionalInfo": "Groupe of 6"
+        "additionalInfo": "Groupe of 6",
+        "pageContent":
+        {
+            "description": "aaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaa aaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaa aaaaaaaaaa aaaaaaa",
+            "information": {
+                "aaa": "bbbb",
+                "bbb": "cccc"
+            },
+            "skills": [
+                "C#",
+                "Unity",
+                "UX"
+            ],
+            "videos": [
+                "https://www.youtube.com/watch?v=7W6yiaMJJ8I",
+                "https://www.youtube.com/watch?v=gNpHlL5NNq4"
+            ],
+            "myWork": [
+                "A",
+                "B"
+            ],
+            "galerie": {
+                "Title": [
+                    "/assets/projects/RollerLoop/thumbnail.png",
+                    "/assets/projects/PythonTools/thumbnail.png",
+                    "/assets/projects/RollerLoop/thumbnail.png"
+                ],
+                "AAA": [
+                    "/assets/projects/RollerLoop/thumbnail.png",
+                    "/assets/projects/PythonTools/thumbnail.png",
+                    "/assets/projects/RollerLoop/thumbnail.png"
+                ],
+                "BBB": [
+                    "/assets/projects/RollerLoop/thumbnail.png",
+                    "/assets/projects/PythonTools/thumbnail.png",
+                    "/assets/projects/RollerLoop/thumbnail.png"
+                ]
+            },
+            "additionalLink": {
+                "link": "https://zweeps.itch.io/hot-on-the-trail",
+                "title": "Play on itch.io"
+            }
+        }
     }
 ]
