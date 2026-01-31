@@ -21,7 +21,8 @@
             },
             "skills": [
                 "React",
-                "UI/UX"
+                "UI/UX",
+                "Figma"
             ],
             "myWork": [
                 "A",
@@ -70,39 +71,49 @@
         ],
         "pageContent":
         {
-            "description": "aaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaa aaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaa aaaaaaaaaa aaaaaaa",
+            "description": "Speed ahead on your rollerblades and rollback while keeping your momentum to access shortcuts. Dive into a simulation with a 2000s aesthetic and lose yourself in the rhythm of Drum & Bass. As a glory-hungry hacker, find the system’s weak spot!",
             "information": {
-                "aaa": "bbbb",
-                "bbb": "cccc"
+                "Language": "C++",
+                "Game Engine": "Unreal Engine",
+                "Platform": "PS5 & PC",
+                "Team Size": "20",
+                "Duration": "Sep 2024 — May 2025"
             },
+            "roles": [
+                "UI Designer",
+                "UI Developer",
+                "Gameplay Programmer"
+            ],
             "skills": [
                 "C++",
                 "Unreal Engine",
-                "UI/UX"
+                "UI/UX",
+                "Figma"
             ],
             "videos": [
                 "https://www.youtube.com/watch?v=7W6yiaMJJ8I",
+                "https://www.youtube.com/watch?v=phonmQ-InKQ",
                 "https://www.youtube.com/watch?v=gNpHlL5NNq4"
             ],
             "myWork": [
-                "A",
-                "B"
+                "Conceptualized and built interactive, user-centric interfaces from wireframes to final integration",
+                "Developed scalable mechanics and core systems to deliver a stable, engaging player experience",
+                "Produced exhaustive Technical Design Documents (TDD) to document architecture and mitigate technical risks"
             ],
             "galerie": {
-                "Title": [
-                    "/assets/projects/RollerLoop/thumbnail.png",
-                    "/assets/projects/PythonTools/thumbnail.png",
-                    "/assets/projects/RollerLoop/thumbnail.png"
+                "Interfaces": [
+                    "/assets/projects/RollerLoop/NameSelector.png",
+                    "/assets/projects/RollerLoop/Home.png",
+                    "/assets/projects/RollerLoop/LevelSelector.png",
+                    "/assets/projects/RollerLoop/VictoryScreen.png"
                 ],
-                "AAA": [
-                    "/assets/projects/RollerLoop/thumbnail.png",
-                    "/assets/projects/PythonTools/thumbnail.png",
-                    "/assets/projects/RollerLoop/thumbnail.png"
+                "Game Mechanics": [
+                    "/assets/projects/RollerLoop/Tutorial.png",
+                    "/assets/projects/RollerLoop/Checkpoint.png",
+                    "/assets/projects/RollerLoop/Speed.png"
                 ],
-                "BBB": [
-                    "/assets/projects/RollerLoop/thumbnail.png",
-                    "/assets/projects/PythonTools/thumbnail.png",
-                    "/assets/projects/RollerLoop/thumbnail.png"
+                "Documentation": [
+                    "/assets/projects/RollerLoop/TDD.png"
                 ]
             },
             "additionalLink": {
@@ -132,6 +143,11 @@
                 "aaa": "bbbb",
                 "bbb": "cccc"
             },
+            "roles": [
+                "UI Designer",
+                "UI Developer",
+                "Gameplay Programmer"
+            ],
             "skills": [
                 "Python",
                 "Tooling",
@@ -182,6 +198,11 @@
                 "aaa": "bbbb",
                 "bbb": "cccc"
             },
+            "roles": [
+                "UI Designer",
+                "UI Developer",
+                "Gameplay Programmer"
+            ],
             "skills": [
                 "C++",
                 "Unreal Engine",
@@ -235,6 +256,11 @@
                 "aaa": "bbbb",
                 "bbb": "cccc"
             },
+            "roles": [
+                "UI Designer",
+                "UI Developer",
+                "Gameplay Programmer"
+            ],
             "skills": [
                 "C#",
                 "Unity",
@@ -286,6 +312,11 @@
                 "aaa": "bbbb",
                 "bbb": "cccc"
             },
+            "roles": [
+                "UI Designer",
+                "UI Developer",
+                "Gameplay Programmer"
+            ],
             "skills": [
                 "C#",
                 "Unity",

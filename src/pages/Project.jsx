@@ -33,7 +33,7 @@ const ProjectVideo = ({ url }) => {
     };
 
     return (
-        <div className="w-full aspect-video overflow-hidden bg-black">
+        <div className="w-full aspect-video rounded-xl overflow-hidden bg-black">
             <iframe
                 className="w-full h-full"
                 src={`https://www.youtube.com/embed/${getYouTubeID(url)}?rel=0&modestbranding=1`}
@@ -108,8 +108,8 @@ const Project = () => {
     return (
         <div className="flex flex-col items-center w-full min-h-screen bg-white overflow-x-hidden">
             <nav className="z-50">
-                <NavButton project={prevProject} direction={-1} setDirection={setDirection} icon={HiChevronLeft} positionClasses="bottom-6 left-6 md:left-4 lg:left-8" />
-                <NavButton project={nextProject} direction={1} setDirection={setDirection} icon={HiChevronRight} positionClasses="bottom-6 right-6 md:right-4 lg:right-8" />
+                <NavButton project={prevProject} direction={-1} setDirection={setDirection} icon={HiChevronLeft} positionClasses="bottom-6 left-6 md:left-4 lg:left-8"/>
+                <NavButton project={nextProject} direction={1} setDirection={setDirection} icon={HiChevronRight} positionClasses="bottom-6 right-6 md:right-4 lg:right-8"/>
             </nav>
             <AnimatePresence mode="wait" initial={false} custom={direction}>
                 <motion.div
@@ -131,9 +131,9 @@ const Project = () => {
                                 style={{ x: translateX, y: translateY, rotateX, rotateY, scale: 1.05 }}
                                 className="relative w-full h-full flex items-center justify-center"
                             >
-                                <img className="absolute inset-0 w-full h-full object-cover select-none" src={project.thumbnail} alt={project.name} />
+                                <img className="absolute inset-0 w-full h-full object-cover select-none" src={project.thumbnail} alt={project.name}/>
                                 <div className="absolute inset-0 bg-black/20"/>
-                                <motion.h1 
+                                <motion.h1
                                     animate={{ y: [0, -10, 0], opacity: [0.9, 1, 0.9] }}
                                     transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
                                     className="relative z-10 text-3xl md:text-8xl font-bold text-white tracking-tight drop-shadow-2xl px-4 text-center"
@@ -149,8 +149,8 @@ const Project = () => {
                             </div>
                         </div>
                     </section>
-                    <div id="description-section" className="w-full max-w-6xl px-4 md:px-8 mx-auto flex flex-col lg:flex-row items-start gap-12 lg:gap-16">
-                        <div className='w-full lg:w-2/3 flex flex-col gap-12'>
+                    <div id="description-section" className="w-full max-w-6xl px-4 md:px-8 mx-auto flex flex-col lg:flex-row items-start gap-6 lg:gap-10">
+                        <div className='w-full lg:w-2/3 flex flex-col gap-5'>
                             <Box title={"Description"}
                                 content={
                                     <p className="text-slate-600 leading-relaxed text-lg text-justify whitespace-pre-line">
@@ -171,16 +171,21 @@ const Project = () => {
                         <div className='w-full lg:w-1/3 flex flex-col gap-5 h-fit lg:sticky lg:top-24'>
                             <Box title={"Information"}
                                 content={
-                                    <div className="flex flex-col gap-4">
+                                    <div className="flex flex-col gap-2">
                                         {content.information && Object.entries(content.information).map(([key, value]) => (
-                                            <div key={key} className='flex flex-row justify-between items-center'>
-                                                <span className="w-1/2 text-left text-slate-400 text-xs uppercase font-semibold">{key}</span>
-                                                <span className="w-1/2 flex-1 text-left text-slate-800 font-medium">{value}</span>
+                                            <div key={key} className='flex flex-row justify-between items-start'>
+                                                <span className="w-1/2 text-left text-slate-400 font-semibold">{key}</span>
+                                                <span className="w-1/2 text-left text-slate-800 font-medium">{value}</span>
                                             </div>
                                         ))}
                                     </div>
                                 }
                             />
+                            { content.roles && (
+                                <Box title={"Roles"}
+                                    content={<TagGrid tags={content.roles}/>}
+                                />
+                            )}
                             <Box title={"Skills"}
                                 content={<TagGrid tags={content.skills}/>}
                             />
@@ -201,7 +206,7 @@ const Project = () => {
                                     <div className="flex text-left flex-col gap-[10px]">
                                         {content.myWork.map((text) => (
                                             <div className='flex flex-row gap-[10px] items-center' >
-                                                <FaArrowRightLong />
+                                                <FaArrowRightLong className='text-blue-600'/>
                                                 <p>{text}</p>
                                             </div>
                                         ))}
@@ -209,7 +214,7 @@ const Project = () => {
                                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
                                         {Object.entries(content.galerie).map(([title, images], index) => (
                                             <div key={index} className="w-full">
-                                                <Carousel images={images} title={title} />
+                                                <Carousel images={images} title={title}/>
                                             </div>
                                         ))}
                                     </div>
