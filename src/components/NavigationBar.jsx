@@ -52,7 +52,7 @@ const Navbar = () => {
                             target="_blank"
                             className="text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200"
                         >
-                            Contact
+                            Contact Me
                         </a>
                     </div>
                 </div>

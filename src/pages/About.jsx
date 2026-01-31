@@ -14,9 +14,9 @@ const About = () => {
                 alt={profile.profilePicture.alt}
             />
             <AboutMe/>
-            <CustomButton title={"Contact me"} to={profile.contact} icon={FaLinkedinIn}/>
-            <Timeline title={"Experience"} data={profile.experience}/>
-            <Timeline title={"Education"} data={profile.education}/>
+            <CustomButton title="Contact Me" to={profile.contact} external={true} icon={FaLinkedinIn}/>
+            <Timeline title="Experience" data={profile.experience}/>
+            <Timeline title="Education" data={profile.education}/>
         </div>
     );
 };

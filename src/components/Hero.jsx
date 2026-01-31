@@ -36,12 +36,12 @@ const Hero = () => {
                     </p>
                     <div className='flex flex-row gap-[15px]'>
                         <CustomButton className="mt-[35px]"
-                            title={"Projects"}
-                            to={"/work"}
+                            title="Projects"
+                            to="/work"
                             icon={TbZoom}
                         />
                         <CustomButton className="mt-[35px]"
-                            title={"Contact me"}
+                            title="Contact Me"
                             to={profile.contact}
                             icon={FaLinkedinIn}
                             external={true}

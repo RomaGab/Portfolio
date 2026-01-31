@@ -152,7 +152,7 @@ const Project = () => {
                     </section>
                     <div id="description-section" className="w-full max-w-6xl px-4 md:px-8 mx-auto flex flex-col lg:flex-row items-start gap-6 lg:gap-10">
                         <div className='w-full lg:w-2/3 flex flex-col gap-5'>
-                            <Box title={"Description"}
+                            <Box title="Description"
                                 content={
                                     <p className="text-slate-600 leading-relaxed text-justify whitespace-pre-line">
                                         {content.description}
@@ -160,7 +160,7 @@ const Project = () => {
                                 }
                             />
                             {content.videos && (
-                                <Box title={"Videos"}
+                                <Box title="Videos"
                                     content={
                                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                             {content.videos.map((url, i) => <ProjectVideo key={i} url={url}/>)}
@@ -170,7 +170,7 @@ const Project = () => {
                             )}
                         </div>
                         <div className='w-full lg:w-1/3 flex flex-col gap-5 h-fit lg:sticky lg:top-24'>
-                            <Box title={"Information"}
+                            <Box title="Information"
                                 content={
                                     <div className="flex flex-col gap-2">
                                         {content.information && Object.entries(content.information).map(([key, value]) => (
@@ -184,11 +184,11 @@ const Project = () => {
                                 }
                             />
                             { content.roles && (
-                                <Box title={"Roles"}
+                                <Box title="Roles"
                                     content={<TagGrid tags={content.roles}/>}
                                 />
                             )}
-                            <Box title={"Skills"}
+                            <Box title="Skills"
                                 content={<TagGrid tags={content.skills}/>}
                             />
                             {content.additionalLink && (
@@ -202,7 +202,7 @@ const Project = () => {
                         </div>
                     </div>
                     <section className="w-full max-w-6xl px-4 md:px-8 mx-auto mt-10">
-                        <Box title={"My Work"}
+                        <Box title="My Work"
                             content={
                                 <div className='flex flex-col gap-[30px]'>
                                     <div className="flex text-left flex-col gap-[10px]">
