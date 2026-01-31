@@ -20,7 +20,7 @@ const ProjectCard = ({ project }) => {
             transition={{ duration: 0.4, ease: [0.23, 1, 0.32, 1] }}
             className="group relative bg-white rounded-[24px] overflow-hidden border-2 border-slate-200 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] hover:shadow-[0_30px_60px_-15px_rgba(0,0,0,0.1)] transition-all duration-500 cursor-pointer"
         >
-            <div className="relative aspect-[16/10] overflow-hidden bg-slate-50">
+            <div className="relative aspect-[16/10] overflow-hidden bg-slate-50 border-b-2 border-slate-200">
                 <img
                     src={project.thumbnail}
                     alt={project.name}
@@ -44,7 +44,8 @@ const ProjectCard = ({ project }) => {
                 <div className="mt-4 pt-4 border-t-2 border-slate-100 flex items-center justify-between">
                     <div className="flex flex-col">
                         <span className="text-xs font-bold text-slate-700">
-                            {project.startDate} — {project.endDate}
+                            {project.startDate}
+                            {project.endDate && ` — ${project.endDate}`}
                         </span>
                     </div>
                     <div className="scale-90 origin-right">

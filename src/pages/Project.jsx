@@ -3,7 +3,11 @@ import { motion, useMotionValue, useTransform, useSpring, AnimatePresence } from
 import { HiChevronLeft, HiChevronRight, HiChevronDown } from "react-icons/hi2";
 import { useState, useEffect } from 'react';
 
+import CustomButton from "../components/CustomButton"
 import Award from '../components/Award'
+import Carousel from '../components/Carousel';
+import TagGrid from "../components/TagGrid";
+
 import projects from '../../data/projects.json';
 
 const NavButton = ({ project, direction, setDirection, icon: Icon, positionClasses }) => (
@@ -19,6 +23,27 @@ const NavButton = ({ project, direction, setDirection, icon: Icon, positionClass
         </Link>
     </div>
 );
+
+const ProjectVideo = ({ url }) => {
+    const getYouTubeID = (url) => {
+        if (!url) return null;
+        const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
+        const match = url.match(regExp);
+        return (match && match[2].length === 11) ? match[2] : null;
+    };
+
+    return (
+        <div className="w-full aspect-video overflow-hidden bg-black">
+            <iframe
+                className="w-full h-full"
+                src={`https://www.youtube.com/embed/${getYouTubeID(url)}?rel=0&modestbranding=1`}
+                title="Project Video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+            />
+        </div>
+    );
+};
 
 const Project = () => {
     useEffect(() => {
@@ -70,6 +95,8 @@ const Project = () => {
     };
 
     if (!project) return <div className="text-center mt-20 font-bold">Projet introuvable</div>;
+
+    const content = project.pageContent;
 
     return (
         <div className="flex flex-col items-center w-full min-h-screen bg-white overflow-x-hidden">
@@ -134,29 +161,59 @@ const Project = () => {
                             </div>
                         </div>
                     </section>
-                    <div className="w-full max-w-3xl px-8 flex flex-col items-center text-center pb-32">
-                        <motion.span className="text-blue-600 font-bold uppercase tracking-[0.2em] text-xs md:text-sm mb-6">
-                            {project.category || "Case Study"}
-                        </motion.span>
-                        <motion.p
-                            id="description"
-                            className="text-lg md:text-xl text-slate-500 leading-relaxed mb-16 scroll-mt-32"
-                        >
-                            {project.description}
-                        </motion.p>
-                        <div className="flex flex-wrap justify-center gap-8 md:gap-12 border-t border-slate-100 w-full pt-12">
-                            <div className="flex flex-col gap-1">
-                                <span className="text-[10px] md:text-xs text-slate-400 uppercase font-bold tracking-widest">Timeline</span>
-                                <span className="text-slate-900 font-medium text-sm md:text-base">{project.startDate} — {project.endDate}</span>
+                    <div className="flex flex-row justify-between gap-[50px]">
+                        <div className='flex flex-col gap-[50px]'>
+                            <div className=''>
+                                <h3 className="">Description</h3>
+                                <p id="description" className="scroll-mt-32">
+                                    {project.description}
+                                </p>
                             </div>
-                            {project.additionalInfo && (
-                                <div className="flex flex-col gap-1">
-                                    <span className="text-[10px] md:text-xs text-slate-400 uppercase font-bold tracking-widest">Role</span>
-                                    <span className="text-slate-900 font-medium text-sm md:text-base">{project.additionalInfo}</span>
+                            {content.videos && (
+                                <div className=''>
+                                    <h3 className="">Videos</h3>
+                                    <div className="flex flex-row gap-[10px]">
+                                        {content.videos.map((mediaUrl, index) => (
+                                            <ProjectVideo key={index} url={mediaUrl}/>
+                                        ))}
+                                    </div>
                                 </div>
                             )}
                         </div>
+                        <div className='flex flex-col gap-[50px]'>
+                            <div className="">
+                                <h3 className="">Information</h3>
+                                <div className="flex flex-col">
+                                    {content.information && Object.entries(content.information).map(([key, value]) => (
+                                        <div key={key} className='flex flex-row gap-[10px]'>
+                                            <span className="">{key}</span>
+                                            <span className="">{value}</span>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                            <div className="">
+                                <h3 className="">My Role</h3>
+                                <TagGrid tags={project.tags}/>
+                            </div>
+                            {content.additionalLink && (
+                                <CustomButton
+                                    title={content.additionalLink.title}
+                                    to={content.additionalLink.link}
+                                />
+                            )}
+                        </div>
                     </div>
+                    <section className="p-10">
+                        <h3 className="">My Work</h3>
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-7xl mx-auto px-4">
+                            {Object.entries(content.galerie).map(([title, images], index) => (
+                                <div key={index} className="w-full">
+                                    <Carousel images={images} title={title} />
+                                </div>
+                            ))}
+                        </div>
+                    </section>
                 </motion.div>
             </AnimatePresence>
         </div>

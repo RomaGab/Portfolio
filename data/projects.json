@@ -1,7 +1,32 @@
 [
     {
+        "name": "Portfolio",
+        "id": "Portfolio",
+        "thumbnail": "/assets/projects/Portfolio/thumbnail.png",
+        "description": "Les surfers",
+        "category": "Website",
+        "tags": [
+            "React",
+            "Website",
+            "UI/UX"
+        ],
+        "startDate": "Jan 2026",
+        "additionalInfo": "Groupe of 20",
+        "pageContent":
+        {
+            "description": "",
+            "information": {
+                "aaa": "bbbb",
+                "bbb": "cccc"
+            },
+            "myRole": "",
+            "myWork": "",
+            "galerie": []
+        }
+    },
+    {
         "name": "Roller Loop",
-        "id": "1",
+        "id": "RollerLoop",
         "thumbnail": "/assets/projects/RollerLoop/thumbnail.png",
         "description": "Les surfers",
         "category": "Video Game",
@@ -25,20 +50,41 @@
         {
             "description": "",
             "information": {
-                "": ""
+                "aaa": "bbbb",
+                "bbb": "cccc"
             },
             "myRole": "",
-            "medias": [],
+            "videos": [
+                "https://www.youtube.com/watch?v=7W6yiaMJJ8I",
+                "https://www.youtube.com/watch?v=gNpHlL5NNq4"
+            ],
             "myWork": "",
             "galerie": {
-                "": []
+                "Title": [
+                    "/assets/projects/RollerLoop/thumbnail.png",
+                    "/assets/projects/PythonTools/thumbnail.png",
+                    "/assets/projects/RollerLoop/thumbnail.png"
+                ],
+                "AAA": [
+                    "/assets/projects/RollerLoop/thumbnail.png",
+                    "/assets/projects/PythonTools/thumbnail.png",
+                    "/assets/projects/RollerLoop/thumbnail.png"
+                ],
+                "BBB": [
+                    "/assets/projects/RollerLoop/thumbnail.png",
+                    "/assets/projects/PythonTools/thumbnail.png",
+                    "/assets/projects/RollerLoop/thumbnail.png"
+                ]
             },
-            "additionalLink": ""
+            "additionalLink": {
+                "link": "",
+                "title": "Play on itch.io"
+            }
         }
     },
     {
         "name": "Python Tools",
-        "id": "2",
+        "id": "PythonTools",
         "thumbnail": "/assets/projects/PythonTools/thumbnail.png",
         "description": "Les surfers",
         "category": "Tooling",
@@ -48,9 +94,8 @@
             "UI/UX"
         ],
         "startDate": "Sep 2024",
-        "endDate": "May 2025",
+        "endDate": "Aug 2025",
         "additionalInfo": "Groupe of 20",
-        "awards": [ ],
         "pageContent":
         {
             "description": "",
@@ -58,7 +103,6 @@
                 "": ""
             },
             "myRole": "",
-            "medias": [],
             "myWork": "",
             "galerie": {
                 "": []
@@ -68,7 +112,7 @@
     },
     {
         "name": "Transatlantique",
-        "id": "3",
+        "id": "Transatlantique",
         "thumbnail": "/assets/projects/Transatlantique/thumbnail.png",
         "description": "Les surfers",
         "category": "Video Game",
@@ -77,14 +121,13 @@
             "Unreal Engine",
             "Video Game"
         ],
-        "startDate": "Sep 2025",
-        "endDate": "Sep 2025",
-        "additionalInfo": "Groupe of 4",
-        "awards": [ ]
+        "startDate": "Jan 2024",
+        "endDate": "Mar 2024",
+        "additionalInfo": "Groupe of 4"
     },
     {
         "name": "C# Tools",
-        "id": "4",
+        "id": "CSTools",
         "thumbnail": "/assets/projects/CSTools/thumbnail.png",
         "description": "Les surfers",
         "category": "Tooling",
@@ -94,10 +137,9 @@
             "Tooling",
             "UI/UX"
         ],
-        "startDate": "Sep 2024",
-        "endDate": "May 2025",
+        "startDate": "Jun 2023",
+        "endDate": "Aug 2024",
         "additionalInfo": "Groupe of 20",
-        "awards": [ ],
         "pageContent":
         {
             "description": "",
@@ -105,7 +147,6 @@
                 "": ""
             },
             "myRole": "",
-            "medias": [],
             "myWork": "",
             "galerie": {
                 "": []
@@ -115,7 +156,7 @@
     },
     {
         "name": "Hot On The Trail",
-        "id": "5",
+        "id": "HotOnTheTrail",
         "thumbnail": "/assets/projects/HotOnTheTrail/thumbnail.png",
         "description": "Les surfers",
         "category": "Video Game",
@@ -124,9 +165,8 @@
             "Unity",
             "Video Game"
         ],
-        "startDate": "Sep 2025",
-        "endDate": "Sep 2025",
-        "additionalInfo": "Groupe of 6",
-        "awards": [ ]
+        "startDate": "Jan 2023",
+        "endDate": "Mar 2023",
+        "additionalInfo": "Groupe of 6"
     }
 ]
