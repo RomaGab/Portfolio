@@ -47,12 +47,13 @@ const Navbar = () => {
                     <div className="flex items-center space-x-8">
                         <NavLink to="/work">Projects</NavLink>
                         <NavLink to="/about">About</NavLink>
-                        <NavLink
-                            to="/contact"
-                            className="group flex flex-row items-center gap-[5px] transition-all duration-300"
+                        <a
+                            href={profile.contact}
+                            target="_blank"
+                            className="text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200"
                         >
                             Contact
-                        </NavLink>
+                        </a>
                     </div>
                 </div>
             </div>

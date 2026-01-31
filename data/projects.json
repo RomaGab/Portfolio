@@ -3,25 +3,26 @@
         "name": "Portfolio",
         "id": "Portfolio",
         "thumbnail": "/assets/projects/Portfolio/thumbnail.png",
-        "description": "Les surfers",
+        "description": "The amazing handmade website you are currently visiting!",
         "category": "Website",
         "tags": [
-            "React",
-            "Website",
-            "UI/UX"
+            "JavaScript",
+            "Website"
         ],
         "startDate": "Jan 2026",
-        "additionalInfo": "Groupe of 20",
         "pageContent":
         {
             "description": "aaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaa aaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaa aaaaaaaaaa aaaaaaa",
             "information": {
-                "Language": "React",
-                "Duration": "4 days"
+                "Language": "JavaScript",
+                "Library": "React",
+                "Duration": "5 days"
             },
             "skills": [
+                "JavaScript",
                 "React",
                 "UI/UX",
+                "Git",
                 "Figma"
             ],
             "myWork": [
@@ -29,21 +30,20 @@
                 "B"
             ],
             "galerie": {
-                "Title": [
-                    "/assets/projects/RollerLoop/thumbnail.png",
-                    "/assets/projects/PythonTools/thumbnail.png",
-                    "/assets/projects/RollerLoop/thumbnail.png"
-                ],
-                "AAA": [
-                    "/assets/projects/RollerLoop/thumbnail.png",
-                    "/assets/projects/PythonTools/thumbnail.png",
-                    "/assets/projects/RollerLoop/thumbnail.png"
-                ],
-                "BBB": [
-                    "/assets/projects/RollerLoop/thumbnail.png",
-                    "/assets/projects/PythonTools/thumbnail.png",
-                    "/assets/projects/RollerLoop/thumbnail.png"
-                ]
+                "Interfaces": {
+                    "Name Selector": "/assets/projects/RollerLoop/NameSelector.png",
+                    "Home": "/assets/projects/RollerLoop/Home.png",
+                    "Level Selector": "/assets/projects/RollerLoop/LevelSelector.png",
+                    "Victory Screen": "/assets/projects/RollerLoop/VictoryScreen.png"
+                },
+                "Game Mechanics": {
+                    "Tutorial": "/assets/projects/RollerLoop/Tutorial.png",
+                    "Checkpoint": "/assets/projects/RollerLoop/Checkpoint.png",
+                    "Speed Effects": "/assets/projects/RollerLoop/Speed.png"
+                },
+                "Documentation": {
+                    "TDD": "/assets/projects/RollerLoop/TDD.png"
+                }
             }
         }
     },
@@ -51,17 +51,15 @@
         "name": "Roller Loop",
         "id": "RollerLoop",
         "thumbnail": "/assets/projects/RollerLoop/thumbnail.png",
-        "description": "Les surfers",
+        "description": "Speed ahead on your rollerblades and rollback while keeping your momentum to access shortcuts!",
         "category": "Video Game",
         "tags": [
             "C++",
             "Unreal Engine",
-            "Video Game",
-            "UI/UX"
+            "Video Game"
         ],
         "startDate": "Sep 2024",
         "endDate": "May 2025",
-        "additionalInfo": "Groupe of 20",
         "awards": [
             {
                 "icon": "/assets/awards/rookies.png",
@@ -71,11 +69,11 @@
         ],
         "pageContent":
         {
-            "description": "Speed ahead on your rollerblades and rollback while keeping your momentum to access shortcuts. Dive into a simulation with a 2000s aesthetic and lose yourself in the rhythm of Drum & Bass. As a glory-hungry hacker, find the system’s weak spot!",
+            "description": "Speed ahead on your rollerblades and rollback while keeping your momentum to access shortcuts. Dive into a simulation with a 2000s aesthetic and lose yourself in the rhythm of Drum & Bass.\n\nAs a glory-hungry hacker, find the system’s weak spot!",
             "information": {
                 "Language": "C++",
                 "Game Engine": "Unreal Engine",
-                "Platform": "PS5 & PC",
+                "Platforms": "PS5 & PC",
                 "Team Size": "20",
                 "Duration": "Sep 2024 — May 2025"
             },
@@ -88,6 +86,7 @@
                 "C++",
                 "Unreal Engine",
                 "UI/UX",
+                "Perforce",
                 "Figma"
             ],
             "videos": [
@@ -101,20 +100,20 @@
                 "Produced exhaustive Technical Design Documents (TDD) to document architecture and mitigate technical risks"
             ],
             "galerie": {
-                "Interfaces": [
-                    "/assets/projects/RollerLoop/NameSelector.png",
-                    "/assets/projects/RollerLoop/Home.png",
-                    "/assets/projects/RollerLoop/LevelSelector.png",
-                    "/assets/projects/RollerLoop/VictoryScreen.png"
-                ],
-                "Game Mechanics": [
-                    "/assets/projects/RollerLoop/Tutorial.png",
-                    "/assets/projects/RollerLoop/Checkpoint.png",
-                    "/assets/projects/RollerLoop/Speed.png"
-                ],
-                "Documentation": [
-                    "/assets/projects/RollerLoop/TDD.png"
-                ]
+                "Interfaces": {
+                    "Name Selector": "/assets/projects/RollerLoop/NameSelector.png",
+                    "Home": "/assets/projects/RollerLoop/Home.png",
+                    "Level Selector": "/assets/projects/RollerLoop/LevelSelector.png",
+                    "Victory Screen": "/assets/projects/RollerLoop/VictoryScreen.png"
+                },
+                "Game Mechanics": {
+                    "Tutorial": "/assets/projects/RollerLoop/Tutorial.png",
+                    "Checkpoint": "/assets/projects/RollerLoop/Checkpoint.png",
+                    "Speed Effects": "/assets/projects/RollerLoop/Speed.png"
+                },
+                "Documentation": {
+                    "TDD": "/assets/projects/RollerLoop/TDD.png"
+                }
             },
             "additionalLink": {
                 "link": "https://isart-digital.itch.io/rollerloop",
@@ -126,53 +125,44 @@
         "name": "Python Tools",
         "id": "PythonTools",
         "thumbnail": "/assets/projects/PythonTools/thumbnail.png",
-        "description": "Les surfers",
+        "description": "Tools and software developed in Python during my apprenticeship at Bizaroïd.",
         "category": "Tooling",
         "tags": [
             "Python",
-            "Tooling",
-            "UI/UX"
+            "Tooling"
         ],
         "startDate": "Sep 2024",
         "endDate": "Aug 2025",
-        "additionalInfo": "Groupe of 20",
         "pageContent":
         {
-            "description": "aaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaa aaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaa aaaaaaaaaa aaaaaaa",
+            "description": "Tools and software developed in Python during my apprenticeship at Bizaroïd to optimise the production pipeline in the field of film post-production.\n\nThis resulted in the creation of internal software communicating with Google APIs, as well as extensions for Davinci Resolve software to provide a bridge to FTrack.",
             "information": {
-                "aaa": "bbbb",
-                "bbb": "cccc"
+                "Language": "Python",
+                "Framework": "Qt",
+                "Duration": "Sep 2024 — Aug 2025"
             },
-            "roles": [
-                "UI Designer",
-                "UI Developer",
-                "Gameplay Programmer"
-            ],
             "skills": [
                 "Python",
+                "Qt",
                 "Tooling",
-                "UI/UX"
+                "UI/UX",
+                "Git"
             ],
             "myWork": [
-                "A",
-                "B"
+                "Conceptualised and developed internal software to export film thumbnails to Google Sheets",
+                "Developed extensions for Davinci Resolve to create gateways with FTrack software"
             ],
             "galerie": {
-                "Title": [
-                    "/assets/projects/RollerLoop/thumbnail.png",
-                    "/assets/projects/PythonTools/thumbnail.png",
-                    "/assets/projects/RollerLoop/thumbnail.png"
-                ],
-                "AAA": [
-                    "/assets/projects/RollerLoop/thumbnail.png",
-                    "/assets/projects/PythonTools/thumbnail.png",
-                    "/assets/projects/RollerLoop/thumbnail.png"
-                ],
-                "BBB": [
-                    "/assets/projects/RollerLoop/thumbnail.png",
-                    "/assets/projects/PythonTools/thumbnail.png",
-                    "/assets/projects/RollerLoop/thumbnail.png"
-                ]
+                "Internal Software": {
+                    "Caesar Shots": "/assets/projects/PythonTools/CS.png",
+                    "Shots Maker": "/assets/projects/PythonTools/CSMaker.png",
+                    "Processing": "/assets/projects/PythonTools/CSLoading.png",
+                    "Resullt in Google Sheet": "/assets/projects/PythonTools/CSSheet.png"
+                },
+                "Davinci Resolve": {
+                    "Version Selector": "/assets/projects/PythonTools/VersionSelector.png",
+                    "Thumbnail Updater": "/assets/projects/PythonTools/ThumbnailUpdater.png"
+                }
             }
         }
     },
@@ -180,23 +170,24 @@
         "name": "Transatlantique",
         "id": "Transatlantique",
         "thumbnail": "/assets/projects/Transatlantique/thumbnail.png",
-        "description": "Les surfers",
+        "description": "Come aboard the Transatlantic and dismantle a contraband ring!",
         "category": "Video Game",
         "tags": [
             "C++",
             "Unreal Engine",
-            "Video Game",
-            "UI/UX"
+            "Video Game"
         ],
         "startDate": "Jan 2024",
         "endDate": "Mar 2024",
-        "additionalInfo": "Groupe of 4",
         "pageContent":
         {
             "description": "aaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaa aaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaa aaaaaaaaaa aaaaaaa",
             "information": {
-                "aaa": "bbbb",
-                "bbb": "cccc"
+                "Language": "C++",
+                "Game Engine": "Unreal Engine",
+                "Platforms": "PC",
+                "Team Size": "4",
+                "Duration": "Jan 2024 — Mar 2024"
             },
             "roles": [
                 "UI Designer",
@@ -206,7 +197,8 @@
             "skills": [
                 "C++",
                 "Unreal Engine",
-                "UX"
+                "UX",
+                "Perforce"
             ],
             "videos": [
                 "https://www.youtube.com/watch?v=BSruIGTA_js"
@@ -216,21 +208,20 @@
                 "B"
             ],
             "galerie": {
-                "Title": [
-                    "/assets/projects/RollerLoop/thumbnail.png",
-                    "/assets/projects/PythonTools/thumbnail.png",
-                    "/assets/projects/RollerLoop/thumbnail.png"
-                ],
-                "AAA": [
-                    "/assets/projects/RollerLoop/thumbnail.png",
-                    "/assets/projects/PythonTools/thumbnail.png",
-                    "/assets/projects/RollerLoop/thumbnail.png"
-                ],
-                "BBB": [
-                    "/assets/projects/RollerLoop/thumbnail.png",
-                    "/assets/projects/PythonTools/thumbnail.png",
-                    "/assets/projects/RollerLoop/thumbnail.png"
-                ]
+                "Interfaces": {
+                    "Name Selector": "/assets/projects/RollerLoop/NameSelector.png",
+                    "Home": "/assets/projects/RollerLoop/Home.png",
+                    "Level Selector": "/assets/projects/RollerLoop/LevelSelector.png",
+                    "Victory Screen": "/assets/projects/RollerLoop/VictoryScreen.png"
+                },
+                "Game Mechanics": {
+                    "Tutorial": "/assets/projects/RollerLoop/Tutorial.png",
+                    "Checkpoint": "/assets/projects/RollerLoop/Checkpoint.png",
+                    "Speed Effects": "/assets/projects/RollerLoop/Speed.png"
+                },
+                "Documentation": {
+                    "TDD": "/assets/projects/RollerLoop/TDD.png"
+                }
             }
         }
     },
@@ -238,55 +229,44 @@
         "name": "C# Tools",
         "id": "CSTools",
         "thumbnail": "/assets/projects/CSTools/thumbnail.png",
-        "description": "Les surfers",
+        "description": "Unity tools developed in C# during my internship at Dada! Animation.",
         "category": "Tooling",
         "tags": [
             "C#",
             "Unity",
-            "Tooling",
-            "UI/UX"
+            "Tooling"
         ],
         "startDate": "Jun 2023",
         "endDate": "Aug 2024",
-        "additionalInfo": "Groupe of 20",
         "pageContent":
         {
-            "description": "aaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaa aaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaa aaaaaaaaaa aaaaaaa",
+            "description": "Unity tools developed in C# during my internship at Dada! Animation.",
             "information": {
-                "aaa": "bbbb",
-                "bbb": "cccc"
+                "Language": "C#",
+                "Game Engine": "Unity",
+                "Duration": "Jun 2023 — Aug 2024"
             },
-            "roles": [
-                "UI Designer",
-                "UI Developer",
-                "Gameplay Programmer"
-            ],
             "skills": [
                 "C#",
                 "Unity",
                 "Tooling",
-                "UI/UX"
+                "UI/UX",
+                "Git"
             ],
             "myWork": [
                 "A",
                 "B"
             ],
             "galerie": {
-                "Title": [
-                    "/assets/projects/RollerLoop/thumbnail.png",
-                    "/assets/projects/PythonTools/thumbnail.png",
-                    "/assets/projects/RollerLoop/thumbnail.png"
-                ],
-                "AAA": [
-                    "/assets/projects/RollerLoop/thumbnail.png",
-                    "/assets/projects/PythonTools/thumbnail.png",
-                    "/assets/projects/RollerLoop/thumbnail.png"
-                ],
-                "BBB": [
-                    "/assets/projects/RollerLoop/thumbnail.png",
-                    "/assets/projects/PythonTools/thumbnail.png",
-                    "/assets/projects/RollerLoop/thumbnail.png"
-                ]
+                "Interfaces": {
+                    "Render Queue": "/assets/projects/CSTools/Render.png",
+                    "Scene Manager": "/assets/projects/CSTools/SceneManager.png",
+                    "Timeline Tools": "/assets/projects/CSTools/TimelineTools.png",
+                    "Renamer": "/assets/projects/CSTools/ShotgunToKoolie.png"
+                },
+                "Documentation": {
+                    "Wiki": "/assets/projects/CSTools/Wiki.png"
+                }
             }
         }
     },
@@ -294,58 +274,48 @@
         "name": "Hot On The Trail",
         "id": "HotOnTheTrail",
         "thumbnail": "/assets/projects/HotOnTheTrail/thumbnail.png",
-        "description": "Les surfers",
+        "description": "Play as Inspector Morbier and chase after New York's most wanted thief!",
         "category": "Video Game",
         "tags": [
             "C#",
             "Unity",
-            "Video Game",
-            "UI/UX"
+            "Video Game"
         ],
         "startDate": "Jan 2023",
         "endDate": "Mar 2023",
-        "additionalInfo": "Groupe of 6",
         "pageContent":
         {
-            "description": "aaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaa aaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaa aaaaaaaaaa aaaaaaa",
+            "description": "Play as Inspector Morbier and chase after New York's most wanted thief!",
             "information": {
-                "aaa": "bbbb",
-                "bbb": "cccc"
+                "Language": "C#",
+                "Game Engine": "Unity",
+                "Platforms": "PS4 / PC / Smartphone",
+                "Team Size": "12",
+                "Duration": "Jan 2023 — Mar 2023"
             },
             "roles": [
-                "UI Designer",
-                "UI Developer",
-                "Gameplay Programmer"
+                "Gameplay Programmer",
+                "UX Designer"
             ],
             "skills": [
                 "C#",
                 "Unity",
-                "UX"
+                "UX",
+                "Git"
             ],
             "videos": [
-                "https://www.youtube.com/watch?v=7W6yiaMJJ8I",
-                "https://www.youtube.com/watch?v=gNpHlL5NNq4"
+                "https://www.youtube.com/watch?v=XwbtJw4KngU"
             ],
             "myWork": [
-                "A",
-                "B"
+                "I developed the player's behaviours and interactions with the world",
+                "I designed the level layout"
             ],
             "galerie": {
-                "Title": [
-                    "/assets/projects/RollerLoop/thumbnail.png",
-                    "/assets/projects/PythonTools/thumbnail.png",
-                    "/assets/projects/RollerLoop/thumbnail.png"
-                ],
-                "AAA": [
-                    "/assets/projects/RollerLoop/thumbnail.png",
-                    "/assets/projects/PythonTools/thumbnail.png",
-                    "/assets/projects/RollerLoop/thumbnail.png"
-                ],
-                "BBB": [
-                    "/assets/projects/RollerLoop/thumbnail.png",
-                    "/assets/projects/PythonTools/thumbnail.png",
-                    "/assets/projects/RollerLoop/thumbnail.png"
-                ]
+                "Game Mechanics": {
+                    "Character Controller": "/assets/projects/HotOnTheTrail/Situation1.png",
+                    "Checkpoint": "/assets/projects/HotOnTheTrail/Situation2.png",
+                    "Speed Effects": "/assets/projects/HotOnTheTrail/Situation3.png"
+                }
             },
             "additionalLink": {
                 "link": "https://zweeps.itch.io/hot-on-the-trail",

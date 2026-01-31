@@ -9,6 +9,7 @@ import Award from '../components/Award'
 import Carousel from '../components/Carousel';
 import TagGrid from "../components/TagGrid";
 import projects from '../../data/projects.json';
+import Tag from '../components/Tag';
 
 const NavButton = ({ project, direction, setDirection, icon: Icon, positionClasses }) => (
     <div className={`fixed z-50 ${positionClasses} md:top-1/2 md:bottom-auto md:-translate-y-1/2`}>
@@ -153,7 +154,7 @@ const Project = () => {
                         <div className='w-full lg:w-2/3 flex flex-col gap-5'>
                             <Box title={"Description"}
                                 content={
-                                    <p className="text-slate-600 leading-relaxed text-lg text-justify whitespace-pre-line">
+                                    <p className="text-slate-600 leading-relaxed text-justify whitespace-pre-line">
                                         {content.description}
                                     </p>
                                 }
@@ -173,9 +174,10 @@ const Project = () => {
                                 content={
                                     <div className="flex flex-col gap-2">
                                         {content.information && Object.entries(content.information).map(([key, value]) => (
-                                            <div key={key} className='flex flex-row justify-between items-start'>
-                                                <span className="w-1/2 text-left text-slate-400 font-semibold">{key}</span>
-                                                <span className="w-1/2 text-left text-slate-800 font-medium">{value}</span>
+                                            <div key={key} className='flex flex-row justify-between items-center'>
+                                                <span className="w-1/2 text-left text-[0.8rem] font-semibold text-slate-400">{key}</span>
+                                                <Tag tag={value}/>
+                                                {/* <span className="w-1/2 text-left text-[0.8rem] font-bold text-slate-700">{value}</span> */}
                                             </div>
                                         ))}
                                     </div>
@@ -202,7 +204,7 @@ const Project = () => {
                     <section className="w-full max-w-6xl px-4 md:px-8 mx-auto mt-10">
                         <Box title={"My Work"}
                             content={
-                                <div className='flex flex-col gap-[20px]'>
+                                <div className='flex flex-col gap-[30px]'>
                                     <div className="flex text-left flex-col gap-[10px]">
                                         {content.myWork.map((text) => (
                                             <div className='flex flex-row gap-[10px] items-center' >
