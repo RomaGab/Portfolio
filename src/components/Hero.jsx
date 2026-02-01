@@ -33,7 +33,7 @@ const Hero = () => {
                 <div className="pointer-events-auto flex flex-col items-center w-full">
                     <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-slate-900 mb-6 tracking-tight leading-tight">
                         {firstName} <br/>
-                        <span className="text-blue-600">{lastName.toUpperCase()}</span>
+                        <span className="text-blue-600 uppercase">{lastName}</span>
                     </h1>
                     <ScrollingText roles={profile.titles}/>
                     <p className="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed mt-4">

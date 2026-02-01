@@ -149,7 +149,7 @@ const Project = () => {
                                     <Award awards={project.awards}/>
                                 </div>
                             </div>
-                            <div className="absolute inset-x-0 bottom-10 flex justify-center z-30">
+                            <div className="absolute inset-x-0 bottom-10 hidden md:flex justify-center z-30">
                                 <button onClick={scrollToDescription} className="p-3 rounded-full bg-white/10 backdrop-blur-md border border-white/20 shadow-2xl animate-bounce text-white">
                                     <HiChevronDown className="w-5 h-5 md:w-6 md:h-6"/>
                                 </button>
