@@ -42,7 +42,6 @@ const Work = () => {
 
     const toggleTag = useCallback((tag) => {
         const isSelected = selectedTags.includes(tag);
-
         if (!isSelected && !availableTags.has(tag)) return;
 
         const nextTags = isSelected
@@ -55,11 +54,13 @@ const Work = () => {
         );
     }, [selectedTags, availableTags, setSearchParams]);
 
+    const handleClear = useCallback(() => setSearchParams({}, { replace: true }), [setSearchParams]);
+
     return (
-        <div className="flex flex-col items-center w-full gap-[100px] mt-[125px]">
-            <div className="flex relative flex-col items-center gap-[50px] w-full max-w-7xl">
-                <div className="flex flex-col items-center gap-[50px] mb-[75px] p-8 text-center w-full">
-                    <h1 id="projects" className="text-[50px] font-bold text-slate-900">
+        <div className="flex flex-col items-center w-full gap-16 md:gap-[100px] mt-48 md:mt-56 px-6 md:px-8">
+            <div className="flex relative flex-col items-center gap-8 md:gap-[50px] w-full max-w-7xl">
+                <div className="flex flex-col items-center gap-8 md:gap-[50px] mb-12 md:mb-[75px] text-center w-full">
+                    <h1 id="projects" className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 tracking-tight">
                         My Projects
                     </h1>
                     <TagFilter
@@ -67,9 +68,9 @@ const Work = () => {
                         selectedTags={selectedTags}
                         availableTags={availableTags}
                         onToggle={toggleTag}
-                        onClear={useCallback(() => setSearchParams({}, { replace: true }), [setSearchParams])}
+                        onClear={handleClear}
                     />
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 w-full items-stretch transform-gpu">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10 w-full items-stretch">
                         <AnimatePresence mode='popLayout' initial={false}>
                             {filteredProjects.map((project) => (
                                 <motion.div
@@ -92,6 +93,15 @@ const Work = () => {
                             ))}
                         </AnimatePresence>
                     </div>
+                    {filteredProjects.length === 0 && (
+                        <motion.p
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            className="text-slate-500 mt-20"
+                        >
+                            No projects found with these filters.
+                        </motion.p>
+                    )}
                 </div>
             </div>
         </div>

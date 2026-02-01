@@ -125,14 +125,18 @@ const Project = () => {
                                 <img className="absolute inset-0 w-full h-full object-cover select-none" src={project.thumbnail} alt={project.name}/>
                                 <div className="absolute inset-0 bg-black/20"/>
                                 <motion.h1
+                                    className="relative z-10 text-3xl md:text-8xl font-bold text-white tracking-tight drop-shadow-2xl px-4 text-center pointer-events-none"
                                     animate={{ y: [0, -10, 0], opacity: [0.9, 1, 0.9] }}
                                     transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                                    className="relative z-10 text-3xl md:text-8xl font-bold text-white tracking-tight drop-shadow-2xl px-4 text-center"
                                 >
                                     {project.name}
                                 </motion.h1>
                             </motion.div>
-                            <Award awards={project.awards}/>
+                            <div className="absolute inset-0 z-40 pointer-events-none">
+                                <div className="pointer-events-auto">
+                                    <Award awards={project.awards}/>
+                                </div>
+                            </div>
                             <div className="absolute inset-x-0 bottom-10 flex justify-center z-30">
                                 <button onClick={scrollToDescription} className="p-3 rounded-full bg-white/10 backdrop-blur-md border border-white/20 shadow-2xl animate-bounce text-white">
                                     <HiChevronDown className="w-5 h-5 md:w-6 md:h-6"/>

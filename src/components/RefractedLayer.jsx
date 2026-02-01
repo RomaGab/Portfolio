@@ -1,10 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const RefractedLayer = ({size}) => {
+const RefractedLayer = ({ size }) => {
     return (
         <motion.div
-            className="absolute rounded-full overflow-hidden border border-white/20 shadow-xl bg-white pointer-events-none"
+            className="absolute rounded-full overflow-hidden border border-white/20 shadow-xl bg-white pointer-events-none will-change-transform"
             style={{
                 width: size,
                 height: size,
@@ -17,14 +17,11 @@ const RefractedLayer = ({size}) => {
             transition={{ duration: 1, ease: "easeOut" }}
         >
             <motion.div
-                className="absolute inset-0 bg-cover bg-center"
-                style={{
-                    backgroundSize: 'cover',
-                    scale: 1.2,
-                }}
+                className="absolute inset-0 bg-cover bg-center transform-gpu"
+                style={{ scale: 1.2 }}
             />
         </motion.div>
     );
 };
 
-export default RefractedLayer;
+export default React.memo(RefractedLayer);
