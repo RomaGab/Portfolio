@@ -1,15 +1,16 @@
 import { useParams, Link } from 'react-router-dom';
 import { motion, useMotionValue, useTransform, useSpring, AnimatePresence } from 'framer-motion';
 import { HiChevronLeft, HiChevronRight, HiChevronDown } from "react-icons/hi2";
-import { useState, useEffect } from 'react';
+import { useState, useEffect, memo, lazy, Suspense } from 'react';
 import { FaArrowRightLong } from "react-icons/fa6";
 
 import CustomButton from "../components/CustomButton"
 import Award from '../components/Award'
-import Carousel from '../components/Carousel';
 import TagGrid from "../components/TagGrid";
 import Tag from '../components/Tag';
 import projects from '../../data/projects.json';
+
+const Carousel = lazy(() => import('../components/Carousel'));
 
 const getYouTubeID = (url) => {
     if (!url) return null;
@@ -17,7 +18,7 @@ const getYouTubeID = (url) => {
     return (match && match[2].length === 11) ? match[2] : null;
 };
 
-const NavButton = ({ project, direction, setDirection, icon: Icon, positionClasses }) => (
+const NavButton = memo(({ project, direction, setDirection, icon: Icon, positionClasses }) => (
     <div className={`fixed z-50 ${positionClasses} md:top-1/2 md:bottom-auto md:-translate-y-1/2`}>
         <Link to={`/project/${project.id}`} onClick={() => setDirection(direction)}>
             <motion.div
@@ -29,19 +30,24 @@ const NavButton = ({ project, direction, setDirection, icon: Icon, positionClass
             </motion.div>
         </Link>
     </div>
-);
+));
 
-const ProjectVideo = ({ url }) => (
-    <div className="w-full aspect-video rounded-xl overflow-hidden bg-black">
-        <iframe
-            className="w-full h-full"
-            src={`https://www.youtube.com/embed/${getYouTubeID(url)}?rel=0&modestbranding=1`}
-            title="Project Video"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-        />
-    </div>
-);
+const ProjectVideo = memo(({ url }) => {
+    const videoId = getYouTubeID(url);
+    if (!videoId) return null;
+    return (
+        <div className="w-full aspect-video rounded-xl overflow-hidden bg-slate-900 shadow-inner">
+            <iframe
+                className="w-full h-full"
+                src={`https://www.youtube.com/embed/${videoId}?rel=0&modestbranding=1`}
+                title="Project Video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                loading="lazy"
+            />
+        </div>
+    );
+});
 
 const Box = ({ title, children }) => (
     <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100 shadow-sm">
@@ -93,7 +99,7 @@ const Project = () => {
         }
     };
 
-    if (!project) return <div className="text-center mt-20 font-bold">Projet introuvable</div>;
+    if (!project) return <div className="text-center mt-20 font-bold text-slate-400">Project not found</div>;
     const content = project.pageContent;
 
     return (
@@ -115,15 +121,21 @@ const Project = () => {
                         <div
                             onMouseMove={handleMouseMove}
                             onMouseLeave={() => { mouseX.set(0); mouseY.set(0); }}
-                            className="relative w-full aspect-video rounded-[24px] md:rounded-[32px] overflow-hidden border border-slate-100 bg-slate-50"
+                            className="relative w-full aspect-video rounded-[24px] md:rounded-[32px] overflow-hidden border border-slate-100 bg-slate-200"
                             style={{ perspective: "1500px" }}
                         >
                             <motion.div
                                 style={{ x: translateX, y: translateY, rotateX, rotateY, scale: 1.05 }}
                                 className="relative w-full h-full flex items-center justify-center"
                             >
-                                <img className="absolute inset-0 w-full h-full object-cover select-none" src={project.thumbnail} alt={project.name}/>
-                                <div className="absolute inset-0 bg-black/20"/>
+                                <img 
+                                    className="absolute inset-0 w-full h-full object-cover select-none" 
+                                    src={project.thumbnail} 
+                                    alt={project.name}
+                                    loading="eager"
+                                    decoding="async"
+                                />
+                                <div className="absolute inset-0 bg-black/25"/>
                                 <motion.h1
                                     className="relative z-10 text-3xl md:text-8xl font-bold text-white tracking-tight drop-shadow-2xl px-4 text-center pointer-events-none"
                                     animate={{ y: [0, -10, 0], opacity: [0.9, 1, 0.9] }}
@@ -149,7 +161,7 @@ const Project = () => {
                             <Box title="Description">
                                 <p className="text-slate-600 leading-relaxed text-justify whitespace-pre-line">{content.description}</p>
                             </Box>
-                            {content.videos && (
+                            {content.videos && content.videos.length > 0 && (
                                 <Box title="Videos">
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                         {content.videos.map((url, i) => <ProjectVideo key={i} url={url}/>)}
@@ -181,17 +193,19 @@ const Project = () => {
                                 <div className="flex text-left flex-col gap-[10px]">
                                     {content.myWork.map((text, i) => (
                                         <div key={i} className='flex flex-row gap-[10px] items-center'>
-                                            <FaArrowRightLong className='text-blue-600'/>
-                                            <p>{text}</p>
+                                            <FaArrowRightLong className='text-blue-600 flex-shrink-0'/>
+                                            <p className="text-slate-700">{text}</p>
                                         </div>
                                     ))}
                                 </div>
                                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
-                                    {Object.entries(content.galerie).map(([title, images], index) => (
-                                        <div key={index} className="w-full">
-                                            <Carousel images={images} title={title}/>
-                                        </div>
-                                    ))}
+                                    <Suspense fallback={<div className="aspect-video bg-slate-100 animate-pulse rounded-2xl"/>}>
+                                        {Object.entries(content.galerie).map(([title, images], index) => (
+                                            <div key={index} className="w-full">
+                                                <Carousel images={images} title={title}/>
+                                            </div>
+                                        ))}
+                                    </Suspense>
                                 </div>
                             </div>
                         </Box>
