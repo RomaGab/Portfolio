@@ -58,7 +58,7 @@ const Navbar = () => {
 
                     <div className="flex items-center space-x-4 md:space-x-8">
                         <NavLink to="/work">Projects</NavLink>
-                        <NavLink to="/about">About</NavLink>
+                        <NavLink to="/about">About Me</NavLink>
                         <a
                             href={profile.contact}
                             target="_blank"

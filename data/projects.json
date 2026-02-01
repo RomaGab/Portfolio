@@ -54,6 +54,11 @@
         "endDate": "May 2025",
         "awards": [
             {
+                "icon": "/assets/awards/pegases.webp",
+                "title": "Pégases 2026 | Best Student Video Game - Contender",
+                "link": "https://academiejeuvideo.org/"
+            },
+            {
                 "icon": "/assets/awards/rookies.webp",
                 "title": "Rookie Awards 2025 | Rookie of the Year - Finalist",
                 "link": "https://www.therookies.co/entries/39384"

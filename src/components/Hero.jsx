@@ -37,7 +37,7 @@ const Hero = () => {
                     </h1>
                     <ScrollingText roles={profile.titles}/>
                     <p className="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed mt-4">
-                        Optimizing workflows and <span className="text-blue-600">empowering teams</span> through custom development and automated engineering operations.
+                        Optimizing workflows and <span className="text-blue-600">empowering teams</span> through custom development and automated engineering operations at <span className="text-blue-600">Kering</span>.
                     </p>
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-[15px] mt-[35px] w-full">
                         <CustomButton
