@@ -44,7 +44,7 @@ const Hero = () => {
                             title="Contact Me"
                             to={profile.contact}
                             icon={FaLinkedinIn}
-                            external={true}
+                            external
                         />
                     </div>
                 </div>

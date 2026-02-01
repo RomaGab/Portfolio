@@ -12,7 +12,7 @@ const TagFilter = ({ allTags, selectedTags, availableTags, onToggle, onClear }) 
                         isSelected={selectedTags.includes(tag)}
                         isAvailable={availableTags.has(tag)}
                         onClick={() => onToggle(tag)}
-                        showClose={true}
+                        showClose
                     />
                 ))}
             </div>
