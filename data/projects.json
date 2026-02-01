@@ -2,7 +2,7 @@
     {
         "name": "Portfolio",
         "id": "Portfolio",
-        "thumbnail": "/assets/projects/Portfolio/thumbnail.webp",
+        "thumbnail": "../assets/projects/Portfolio/thumbnail.webp",
         "description": "More than just a portfolio, this site is a playground for my technical and creative experiments!",
         "category": "Website",
         "tags": [
@@ -31,10 +31,10 @@
             ],
             "galerie": {
                 "Pages": {
-                    "Home Page": "/assets/projects/Portfolio/thumbnail.webp",
-                    "Projects": "/assets/projects/Portfolio/Work.webp",
-                    "Project": "/assets/projects/Portfolio/Project.webp",
-                    "Image Viewer": "/assets/projects/Portfolio/ImageViewer.webp"
+                    "Home Page": "../assets/projects/Portfolio/thumbnail.webp",
+                    "Projects": "./assets/projects/Portfolio/Work.webp",
+                    "Project": "./assets/projects/Portfolio/Project.webp",
+                    "Image Viewer": "./assets/projects/Portfolio/ImageViewer.webp"
                 }
             }
         }
@@ -42,7 +42,7 @@
     {
         "name": "Roller Loop",
         "id": "RollerLoop",
-        "thumbnail": "/assets/projects/RollerLoop/thumbnail.webp",
+        "thumbnail": "./assets/projects/RollerLoop/thumbnail.webp",
         "description": "Speed ahead on your rollerblades and rollback while keeping your momentum to access shortcuts!",
         "category": "Video Game",
         "tags": [
@@ -54,12 +54,12 @@
         "endDate": "May 2025",
         "awards": [
             {
-                "icon": "/assets/awards/pegases.webp",
+                "icon": "./assets/awards/pegases.webp",
                 "title": "Pégases 2026 | Best Student Video Game - Contender",
                 "link": "https://academiejeuvideo.org/"
             },
             {
-                "icon": "/assets/awards/rookies.webp",
+                "icon": "./assets/awards/rookies.webp",
                 "title": "Rookie Awards 2025 | Rookie of the Year - Finalist",
                 "link": "https://www.therookies.co/entries/39384"
             }
@@ -98,18 +98,18 @@
             ],
             "galerie": {
                 "Interfaces": {
-                    "Name Selector": "/assets/projects/RollerLoop/NameSelector.webp",
-                    "Home": "/assets/projects/RollerLoop/Home.webp",
-                    "Level Selector": "/assets/projects/RollerLoop/LevelSelector.webp",
-                    "Victory Screen": "/assets/projects/RollerLoop/VictoryScreen.webp"
+                    "Name Selector": "./assets/projects/RollerLoop/NameSelector.webp",
+                    "Home": "./assets/projects/RollerLoop/Home.webp",
+                    "Level Selector": "./assets/projects/RollerLoop/LevelSelector.webp",
+                    "Victory Screen": "./assets/projects/RollerLoop/VictoryScreen.webp"
                 },
                 "Game Mechanics": {
-                    "Tutorial": "/assets/projects/RollerLoop/Tutorial.webp",
-                    "Checkpoint": "/assets/projects/RollerLoop/Checkpoint.webp",
-                    "Speed Effects": "/assets/projects/RollerLoop/Speed.webp"
+                    "Tutorial": "./assets/projects/RollerLoop/Tutorial.webp",
+                    "Checkpoint": "./assets/projects/RollerLoop/Checkpoint.webp",
+                    "Speed Effects": "./assets/projects/RollerLoop/Speed.webp"
                 },
                 "Documentation": {
-                    "TDD": "/assets/projects/RollerLoop/TDD.webp"
+                    "TDD": "./assets/projects/RollerLoop/TDD.webp"
                 }
             },
             "additionalLink": {
@@ -121,7 +121,7 @@
     {
         "name": "Python Tools",
         "id": "PythonTools",
-        "thumbnail": "/assets/projects/PythonTools/thumbnail.webp",
+        "thumbnail": "./assets/projects/PythonTools/thumbnail.webp",
         "description": "Tools and software developed in Python during my apprenticeship at Bizaroïd.",
         "category": "Tooling",
         "tags": [
@@ -152,14 +152,14 @@
             ],
             "galerie": {
                 "Internal Software": {
-                    "Caesar Shots": "/assets/projects/PythonTools/CS.webp",
-                    "Shots Maker": "/assets/projects/PythonTools/CSMaker.webp",
-                    "Processing": "/assets/projects/PythonTools/CSLoading.webp",
-                    "Resullt in Google Sheet": "/assets/projects/PythonTools/CSSheet.webp"
+                    "Caesar Shots": "./assets/projects/PythonTools/CS.webp",
+                    "Shots Maker": "./assets/projects/PythonTools/CSMaker.webp",
+                    "Processing": "./assets/projects/PythonTools/CSLoading.webp",
+                    "Resullt in Google Sheet": "./assets/projects/PythonTools/CSSheet.webp"
                 },
                 "Davinci Resolve": {
-                    "Version Selector": "/assets/projects/PythonTools/VersionSelector.webp",
-                    "Thumbnail Updater": "/assets/projects/PythonTools/ThumbnailUpdater.webp"
+                    "Version Selector": "./assets/projects/PythonTools/VersionSelector.webp",
+                    "Thumbnail Updater": "./assets/projects/PythonTools/ThumbnailUpdater.webp"
                 }
             }
         }
@@ -167,7 +167,7 @@
     {
         "name": "Transatlantic",
         "id": "Transatlantic",
-        "thumbnail": "/assets/projects/Transatlantique/thumbnail.webp",
+        "thumbnail": "./assets/projects/Transatlantique/thumbnail.webp",
         "description": "Come aboard the Transatlantic and dismantle a contraband ring!",
         "category": "Video Game",
         "tags": [
@@ -207,9 +207,9 @@
             ],
             "galerie": {
                 "UX Design": {
-                    "Environment Design": "/assets/projects/Transatlantique/NPC.webp",
-                    "Environment Design ": "/assets/projects/Transatlantique/Room.webp",
-                    "Environment Design  ": "/assets/projects/Transatlantique/Desk.webp"
+                    "Environment Design": "./assets/projects/Transatlantique/NPC.webp",
+                    "Environment Design ": "./assets/projects/Transatlantique/Room.webp",
+                    "Environment Design  ": "./assets/projects/Transatlantique/Desk.webp"
                 }
             }
         }
@@ -217,7 +217,7 @@
     {
         "name": "C# Tools",
         "id": "CSTools",
-        "thumbnail": "/assets/projects/CSTools/thumbnail.webp",
+        "thumbnail": "./assets/projects/CSTools/thumbnail.webp",
         "description": "Unity tools developed in C# during my internship at Dada! Animation.",
         "category": "Tooling",
         "tags": [
@@ -251,13 +251,13 @@
             ],
             "galerie": {
                 "Interfaces": {
-                    "Render Queue": "/assets/projects/CSTools/Render.webp",
-                    "Scene Manager": "/assets/projects/CSTools/SceneManager.webp",
-                    "Timeline Tools": "/assets/projects/CSTools/TimelineTools.webp",
-                    "Asset Renamer": "/assets/projects/CSTools/ShotgunToKoolie.webp"
+                    "Render Queue": "./assets/projects/CSTools/Render.webp",
+                    "Scene Manager": "./assets/projects/CSTools/SceneManager.webp",
+                    "Timeline Tools": "./assets/projects/CSTools/TimelineTools.webp",
+                    "Asset Renamer": "./assets/projects/CSTools/ShotgunToKoolie.webp"
                 },
                 "Documentation": {
-                    "Wiki": "/assets/projects/CSTools/Wiki.webp"
+                    "Wiki": "./assets/projects/CSTools/Wiki.webp"
                 }
             }
         }
@@ -265,7 +265,7 @@
     {
         "name": "Hot On The Trail",
         "id": "HotOnTheTrail",
-        "thumbnail": "/assets/projects/HotOnTheTrail/thumbnail.webp",
+        "thumbnail": "./assets/projects/HotOnTheTrail/thumbnail.webp",
         "description": "Step into the shoes of Inspector Morbier and hunt down New York City's most elusive criminal!",
         "category": "Video Game",
         "tags": [
@@ -304,9 +304,9 @@
             ],
             "galerie": {
                 "Game Mechanics": {
-                    "Character Controller": "/assets/projects/HotOnTheTrail/Situation1.webp",
-                    "Character Controller ": "/assets/projects/HotOnTheTrail/Situation2.webp",
-                    "Character Controller  ": "/assets/projects/HotOnTheTrail/Situation3.webp"
+                    "Character Controller": "./assets/projects/HotOnTheTrail/Situation1.webp",
+                    "Character Controller ": "./assets/projects/HotOnTheTrail/Situation2.webp",
+                    "Character Controller  ": "./assets/projects/HotOnTheTrail/Situation3.webp"
                 }
             },
             "additionalLink": {
