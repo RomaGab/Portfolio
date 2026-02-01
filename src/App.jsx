@@ -12,7 +12,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/Portfolio">
             <div className="flex flex-col items-center justify-center w-full">
                 <NavigationBar/>
                 <Routes>
