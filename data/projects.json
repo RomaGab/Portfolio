@@ -3,7 +3,7 @@
         "name": "Portfolio",
         "id": "Portfolio",
         "thumbnail": "/assets/projects/Portfolio/thumbnail.webp",
-        "description": "The amazing handmade website you are currently visiting!",
+        "description": "More than just a portfolio, this site is a playground for my technical and creative experiments!",
         "category": "Website",
         "tags": [
             "JavaScript",
@@ -12,7 +12,7 @@
         "startDate": "Jan 2026",
         "pageContent":
         {
-            "description": "aaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaa aaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaa aaaaaaaaaa aaaaaaa",
+            "description": "More than just a portfolio, this site is a playground for my technical and creative experiments. Built from scratch with React, it serves as a live demonstration of my ability to bridge the gap between design and engineering. From custom hooks to optimized asset loading, every line of code is written to ensure that the technology stays invisible, leaving only a smooth, engaging journey for the visitor.",
             "information": {
                 "Language": "JavaScript",
                 "Library": "React",
@@ -26,23 +26,15 @@
                 "Figma"
             ],
             "myWork": [
-                "A",
-                "B"
+                "Crafted intuitive user interfaces and conducted UX research to ensurie a seamless and accessible digital experience",
+                "Developed the web application using React, leveraging modern JavaScript to implement high-performance and scalable components"
             ],
             "galerie": {
-                "Interfaces": {
-                    "Name Selector": "/assets/projects/RollerLoop/NameSelector.webp",
-                    "Home": "/assets/projects/RollerLoop/Home.webp",
-                    "Level Selector": "/assets/projects/RollerLoop/LevelSelector.webp",
-                    "Victory Screen": "/assets/projects/RollerLoop/VictoryScreen.webp"
-                },
-                "Game Mechanics": {
-                    "Tutorial": "/assets/projects/RollerLoop/Tutorial.webp",
-                    "Checkpoint": "/assets/projects/RollerLoop/Checkpoint.webp",
-                    "Speed Effects": "/assets/projects/RollerLoop/Speed.webp"
-                },
-                "Documentation": {
-                    "TDD": "/assets/projects/RollerLoop/TDD.webp"
+                "Pages": {
+                    "Home Page": "/assets/projects/Portfolio/thumbnail.webp",
+                    "Projects": "/assets/projects/Portfolio/Work.webp",
+                    "Project": "/assets/projects/Portfolio/Project.webp",
+                    "Image Viewer": "/assets/projects/Portfolio/ImageViewer.webp"
                 }
             }
         }
@@ -168,8 +160,8 @@
         }
     },
     {
-        "name": "Transatlantique",
-        "id": "Transatlantique",
+        "name": "Transatlantic",
+        "id": "Transatlantic",
         "thumbnail": "/assets/projects/Transatlantique/thumbnail.webp",
         "description": "Come aboard the Transatlantic and dismantle a contraband ring!",
         "category": "Video Game",
@@ -182,7 +174,7 @@
         "endDate": "Mar 2024",
         "pageContent":
         {
-            "description": "aaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaa aaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaa aaaaaaaaaa aaaaaaa",
+            "description": "Come aboard the Transatlantic and dismantle a contraband ring in this captivating game developed with Unreal Engine in C++. As the UX Designer, I meticulously crafted the experience to ensure coherent and intuitive level progression, empowering players to strategically uncover and dismantle the network with deep immersion.",
             "information": {
                 "Language": "C++",
                 "Game Engine": "Unreal Engine",
@@ -191,8 +183,7 @@
                 "Duration": "Jan 2024 — Mar 2024"
             },
             "roles": [
-                "UI Designer",
-                "UI Developer",
+                "UX Designer",
                 "Gameplay Programmer"
             ],
             "skills": [
@@ -205,23 +196,15 @@
                 "https://www.youtube.com/watch?v=BSruIGTA_js"
             ],
             "myWork": [
-                "A",
-                "B"
+                "Engineered player mechanics and developed intelligent NPC behaviors in C++",
+                "Designed a cohesive level layout with a strong focus on user experience, ensuring intuitive navigation for the player",
+                "Conducted extensive research into 1920s naval architecture to ensure historical accuracy and deliver an immersive atmosphere"
             ],
             "galerie": {
-                "Interfaces": {
-                    "Name Selector": "/assets/projects/RollerLoop/NameSelector.webp",
-                    "Home": "/assets/projects/RollerLoop/Home.webp",
-                    "Level Selector": "/assets/projects/RollerLoop/LevelSelector.webp",
-                    "Victory Screen": "/assets/projects/RollerLoop/VictoryScreen.webp"
-                },
-                "Game Mechanics": {
-                    "Tutorial": "/assets/projects/RollerLoop/Tutorial.webp",
-                    "Checkpoint": "/assets/projects/RollerLoop/Checkpoint.webp",
-                    "Speed Effects": "/assets/projects/RollerLoop/Speed.webp"
-                },
-                "Documentation": {
-                    "TDD": "/assets/projects/RollerLoop/TDD.webp"
+                "UX Design": {
+                    "Environment Design": "/assets/projects/Transatlantique/NPC.webp",
+                    "Environment Design ": "/assets/projects/Transatlantique/Room.webp",
+                    "Environment Design  ": "/assets/projects/Transatlantique/Desk.webp"
                 }
             }
         }
@@ -278,7 +261,7 @@
         "name": "Hot On The Trail",
         "id": "HotOnTheTrail",
         "thumbnail": "/assets/projects/HotOnTheTrail/thumbnail.webp",
-        "description": "Play as Inspector Morbier and chase after New York's most wanted thief!",
+        "description": "Step into the shoes of Inspector Morbier and hunt down New York City's most elusive criminal!",
         "category": "Video Game",
         "tags": [
             "C#",
@@ -289,7 +272,7 @@
         "endDate": "Mar 2023",
         "pageContent":
         {
-            "description": "Play as Inspector Morbier and chase after New York's most wanted thief!",
+            "description": "Step into the shoes of Inspector Morbier in this high-energy 2D Unity platformer, as you hunt down New York City's most elusive criminal.\n\nNavigate the urban skyline by mastering dynamic traversal mechanics, from high-speed ziplines to powerful stomp attacks, while tackling an array of challenging platforming sequences designed to test your precision and timing.",
             "information": {
                 "Language": "C#",
                 "Game Engine": "Unity",
