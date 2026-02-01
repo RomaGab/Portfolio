@@ -13,7 +13,7 @@ const Navbar = () => {
     useEffect(() => {
         const handleScroll = () => {
             const currentScrollY = window.scrollY;
-            setShow(!(currentScrollY > lastScrollY && currentScrollY > 50));
+            setShow(!(currentScrollY > lastScrollY && currentScrollY > 100));
             setLastScrollY(currentScrollY);
         };
 
