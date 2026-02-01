@@ -8,11 +8,11 @@ import Work from "./pages/Work";
 import About from "./pages/About";
 import Project from "./pages/Project";
 
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
     return (
-        <BrowserRouter basename="/Portfolio">
+        <HashRouter>
             <div className="flex flex-col items-center justify-center w-full">
                 <NavigationBar/>
                 <Routes>
@@ -23,7 +23,7 @@ function App() {
                 </Routes>
                 <Footer/>
             </div>
-        </BrowserRouter>
+        </HashRouter>
     );
 }
 
