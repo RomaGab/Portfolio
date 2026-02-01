@@ -65,7 +65,9 @@ const Carousel = ({ images = {}, title = "" }) => {
     const [isPaused, setIsPaused] = useState(false);
     const [isFast, setIsFast] = useState(false);
 
-    const imageEntries = useMemo(() => Object.entries(images), [images]);
+    const imageEntries = useMemo(() =>
+        Object.entries(images).map(([name, src]) => [name.trim(), src]),
+    [images]);
     const totalSlides = imageEntries.length;
 
     const nextSlide = useCallback(() => {

@@ -128,9 +128,9 @@ const Project = () => {
                                 style={{ x: translateX, y: translateY, rotateX, rotateY, scale: 1.05 }}
                                 className="relative w-full h-full flex items-center justify-center"
                             >
-                                <img 
-                                    className="absolute inset-0 w-full h-full object-cover select-none" 
-                                    src={project.thumbnail} 
+                                <img
+                                    className="absolute inset-0 w-full h-full object-cover select-none"
+                                    src={project.thumbnail}
                                     alt={project.name}
                                     loading="eager"
                                     decoding="async"

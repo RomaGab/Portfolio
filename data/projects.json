@@ -145,6 +145,7 @@
                 "Python",
                 "Qt",
                 "Tooling",
+                "Automation",
                 "UI/UX",
                 "Git"
             ],
@@ -240,7 +241,7 @@
         "endDate": "Aug 2024",
         "pageContent":
         {
-            "description": "Unity tools developed in C# during my internship at Dada! Animation.",
+            "description": "Custom Unity tools developed in C# during my internship at Dada! Animation to streamline the production pipeline for cartoons and documentaries.\n\nThis resulted in the creation of internal extensions for rapid project setup and specialized artist assistance tools. A key contribution was the development of a custom Render Queue, automating and accelerating the rendering process to significantly optimize final export workflows.",
             "information": {
                 "Language": "C#",
                 "Game Engine": "Unity",
@@ -250,19 +251,22 @@
                 "C#",
                 "Unity",
                 "Tooling",
+                "Automation",
                 "UI/UX",
                 "Git"
             ],
             "myWork": [
-                "A",
-                "B"
+                "Engineered custom tools to automate project initialization, ensuring immediate environment readiness and workflow standardization",
+                "Developed specialized Unity extensions to streamline 3D environment creation and assist artists with asset integration",
+                "Implemented a custom render queue system to automate and accelerate final exports, significantly reducing manual overhead",
+                "Authored comprehensive documentation for every tool to ensure seamless onboarding and long-term maintainability for the artists"
             ],
             "galerie": {
                 "Interfaces": {
                     "Render Queue": "/assets/projects/CSTools/Render.webp",
                     "Scene Manager": "/assets/projects/CSTools/SceneManager.webp",
                     "Timeline Tools": "/assets/projects/CSTools/TimelineTools.webp",
-                    "Renamer": "/assets/projects/CSTools/ShotgunToKoolie.webp"
+                    "Asset Renamer": "/assets/projects/CSTools/ShotgunToKoolie.webp"
                 },
                 "Documentation": {
                     "Wiki": "/assets/projects/CSTools/Wiki.webp"
@@ -307,14 +311,14 @@
                 "https://www.youtube.com/watch?v=XwbtJw4KngU"
             ],
             "myWork": [
-                "I developed the player's behaviours and interactions with the world",
-                "I designed the level layout"
+                "Engineered core player mechanics and world interaction systems, focusing on responsive controls to enhance player immersion",
+                "Designed and blocked out level layouts, focusing on player flow and pacing to ensure an intuitive and engaging experience"
             ],
             "galerie": {
                 "Game Mechanics": {
                     "Character Controller": "/assets/projects/HotOnTheTrail/Situation1.webp",
-                    "Checkpoint": "/assets/projects/HotOnTheTrail/Situation2.webp",
-                    "Speed Effects": "/assets/projects/HotOnTheTrail/Situation3.webp"
+                    "Character Controller ": "/assets/projects/HotOnTheTrail/Situation2.webp",
+                    "Character Controller  ": "/assets/projects/HotOnTheTrail/Situation3.webp"
                 }
             },
             "additionalLink": {
