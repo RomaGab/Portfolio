@@ -2,7 +2,7 @@
     {
         "name": "Portfolio",
         "id": "Portfolio",
-        "thumbnail": "/assets/projects/Portfolio/thumbnail.png",
+        "thumbnail": "/assets/projects/Portfolio/thumbnail.webp",
         "description": "The amazing handmade website you are currently visiting!",
         "category": "Website",
         "tags": [
@@ -31,18 +31,18 @@
             ],
             "galerie": {
                 "Interfaces": {
-                    "Name Selector": "/assets/projects/RollerLoop/NameSelector.png",
-                    "Home": "/assets/projects/RollerLoop/Home.png",
-                    "Level Selector": "/assets/projects/RollerLoop/LevelSelector.png",
-                    "Victory Screen": "/assets/projects/RollerLoop/VictoryScreen.png"
+                    "Name Selector": "/assets/projects/RollerLoop/NameSelector.webp",
+                    "Home": "/assets/projects/RollerLoop/Home.webp",
+                    "Level Selector": "/assets/projects/RollerLoop/LevelSelector.webp",
+                    "Victory Screen": "/assets/projects/RollerLoop/VictoryScreen.webp"
                 },
                 "Game Mechanics": {
-                    "Tutorial": "/assets/projects/RollerLoop/Tutorial.png",
-                    "Checkpoint": "/assets/projects/RollerLoop/Checkpoint.png",
-                    "Speed Effects": "/assets/projects/RollerLoop/Speed.png"
+                    "Tutorial": "/assets/projects/RollerLoop/Tutorial.webp",
+                    "Checkpoint": "/assets/projects/RollerLoop/Checkpoint.webp",
+                    "Speed Effects": "/assets/projects/RollerLoop/Speed.webp"
                 },
                 "Documentation": {
-                    "TDD": "/assets/projects/RollerLoop/TDD.png"
+                    "TDD": "/assets/projects/RollerLoop/TDD.webp"
                 }
             }
         }
@@ -50,7 +50,7 @@
     {
         "name": "Roller Loop",
         "id": "RollerLoop",
-        "thumbnail": "/assets/projects/RollerLoop/thumbnail.png",
+        "thumbnail": "/assets/projects/RollerLoop/thumbnail.webp",
         "description": "Speed ahead on your rollerblades and rollback while keeping your momentum to access shortcuts!",
         "category": "Video Game",
         "tags": [
@@ -62,7 +62,7 @@
         "endDate": "May 2025",
         "awards": [
             {
-                "icon": "/assets/awards/rookies.png",
+                "icon": "/assets/awards/rookies.webp",
                 "title": "Rookie Awards 2025 | Rookie of the Year - Finalist",
                 "link": "https://www.therookies.co/entries/39384"
             }
@@ -101,18 +101,18 @@
             ],
             "galerie": {
                 "Interfaces": {
-                    "Name Selector": "/assets/projects/RollerLoop/NameSelector.png",
-                    "Home": "/assets/projects/RollerLoop/Home.png",
-                    "Level Selector": "/assets/projects/RollerLoop/LevelSelector.png",
-                    "Victory Screen": "/assets/projects/RollerLoop/VictoryScreen.png"
+                    "Name Selector": "/assets/projects/RollerLoop/NameSelector.webp",
+                    "Home": "/assets/projects/RollerLoop/Home.webp",
+                    "Level Selector": "/assets/projects/RollerLoop/LevelSelector.webp",
+                    "Victory Screen": "/assets/projects/RollerLoop/VictoryScreen.webp"
                 },
                 "Game Mechanics": {
-                    "Tutorial": "/assets/projects/RollerLoop/Tutorial.png",
-                    "Checkpoint": "/assets/projects/RollerLoop/Checkpoint.png",
-                    "Speed Effects": "/assets/projects/RollerLoop/Speed.png"
+                    "Tutorial": "/assets/projects/RollerLoop/Tutorial.webp",
+                    "Checkpoint": "/assets/projects/RollerLoop/Checkpoint.webp",
+                    "Speed Effects": "/assets/projects/RollerLoop/Speed.webp"
                 },
                 "Documentation": {
-                    "TDD": "/assets/projects/RollerLoop/TDD.png"
+                    "TDD": "/assets/projects/RollerLoop/TDD.webp"
                 }
             },
             "additionalLink": {
@@ -124,7 +124,7 @@
     {
         "name": "Python Tools",
         "id": "PythonTools",
-        "thumbnail": "/assets/projects/PythonTools/thumbnail.png",
+        "thumbnail": "/assets/projects/PythonTools/thumbnail.webp",
         "description": "Tools and software developed in Python during my apprenticeship at Bizaroïd.",
         "category": "Tooling",
         "tags": [
@@ -154,14 +154,14 @@
             ],
             "galerie": {
                 "Internal Software": {
-                    "Caesar Shots": "/assets/projects/PythonTools/CS.png",
-                    "Shots Maker": "/assets/projects/PythonTools/CSMaker.png",
-                    "Processing": "/assets/projects/PythonTools/CSLoading.png",
-                    "Resullt in Google Sheet": "/assets/projects/PythonTools/CSSheet.png"
+                    "Caesar Shots": "/assets/projects/PythonTools/CS.webp",
+                    "Shots Maker": "/assets/projects/PythonTools/CSMaker.webp",
+                    "Processing": "/assets/projects/PythonTools/CSLoading.webp",
+                    "Resullt in Google Sheet": "/assets/projects/PythonTools/CSSheet.webp"
                 },
                 "Davinci Resolve": {
-                    "Version Selector": "/assets/projects/PythonTools/VersionSelector.png",
-                    "Thumbnail Updater": "/assets/projects/PythonTools/ThumbnailUpdater.png"
+                    "Version Selector": "/assets/projects/PythonTools/VersionSelector.webp",
+                    "Thumbnail Updater": "/assets/projects/PythonTools/ThumbnailUpdater.webp"
                 }
             }
         }
@@ -169,7 +169,7 @@
     {
         "name": "Transatlantique",
         "id": "Transatlantique",
-        "thumbnail": "/assets/projects/Transatlantique/thumbnail.png",
+        "thumbnail": "/assets/projects/Transatlantique/thumbnail.webp",
         "description": "Come aboard the Transatlantic and dismantle a contraband ring!",
         "category": "Video Game",
         "tags": [
@@ -209,18 +209,18 @@
             ],
             "galerie": {
                 "Interfaces": {
-                    "Name Selector": "/assets/projects/RollerLoop/NameSelector.png",
-                    "Home": "/assets/projects/RollerLoop/Home.png",
-                    "Level Selector": "/assets/projects/RollerLoop/LevelSelector.png",
-                    "Victory Screen": "/assets/projects/RollerLoop/VictoryScreen.png"
+                    "Name Selector": "/assets/projects/RollerLoop/NameSelector.webp",
+                    "Home": "/assets/projects/RollerLoop/Home.webp",
+                    "Level Selector": "/assets/projects/RollerLoop/LevelSelector.webp",
+                    "Victory Screen": "/assets/projects/RollerLoop/VictoryScreen.webp"
                 },
                 "Game Mechanics": {
-                    "Tutorial": "/assets/projects/RollerLoop/Tutorial.png",
-                    "Checkpoint": "/assets/projects/RollerLoop/Checkpoint.png",
-                    "Speed Effects": "/assets/projects/RollerLoop/Speed.png"
+                    "Tutorial": "/assets/projects/RollerLoop/Tutorial.webp",
+                    "Checkpoint": "/assets/projects/RollerLoop/Checkpoint.webp",
+                    "Speed Effects": "/assets/projects/RollerLoop/Speed.webp"
                 },
                 "Documentation": {
-                    "TDD": "/assets/projects/RollerLoop/TDD.png"
+                    "TDD": "/assets/projects/RollerLoop/TDD.webp"
                 }
             }
         }
@@ -228,7 +228,7 @@
     {
         "name": "C# Tools",
         "id": "CSTools",
-        "thumbnail": "/assets/projects/CSTools/thumbnail.png",
+        "thumbnail": "/assets/projects/CSTools/thumbnail.webp",
         "description": "Unity tools developed in C# during my internship at Dada! Animation.",
         "category": "Tooling",
         "tags": [
@@ -259,13 +259,13 @@
             ],
             "galerie": {
                 "Interfaces": {
-                    "Render Queue": "/assets/projects/CSTools/Render.png",
-                    "Scene Manager": "/assets/projects/CSTools/SceneManager.png",
-                    "Timeline Tools": "/assets/projects/CSTools/TimelineTools.png",
-                    "Renamer": "/assets/projects/CSTools/ShotgunToKoolie.png"
+                    "Render Queue": "/assets/projects/CSTools/Render.webp",
+                    "Scene Manager": "/assets/projects/CSTools/SceneManager.webp",
+                    "Timeline Tools": "/assets/projects/CSTools/TimelineTools.webp",
+                    "Renamer": "/assets/projects/CSTools/ShotgunToKoolie.webp"
                 },
                 "Documentation": {
-                    "Wiki": "/assets/projects/CSTools/Wiki.png"
+                    "Wiki": "/assets/projects/CSTools/Wiki.webp"
                 }
             }
         }
@@ -273,7 +273,7 @@
     {
         "name": "Hot On The Trail",
         "id": "HotOnTheTrail",
-        "thumbnail": "/assets/projects/HotOnTheTrail/thumbnail.png",
+        "thumbnail": "/assets/projects/HotOnTheTrail/thumbnail.webp",
         "description": "Play as Inspector Morbier and chase after New York's most wanted thief!",
         "category": "Video Game",
         "tags": [
@@ -312,9 +312,9 @@
             ],
             "galerie": {
                 "Game Mechanics": {
-                    "Character Controller": "/assets/projects/HotOnTheTrail/Situation1.png",
-                    "Checkpoint": "/assets/projects/HotOnTheTrail/Situation2.png",
-                    "Speed Effects": "/assets/projects/HotOnTheTrail/Situation3.png"
+                    "Character Controller": "/assets/projects/HotOnTheTrail/Situation1.webp",
+                    "Checkpoint": "/assets/projects/HotOnTheTrail/Situation2.webp",
+                    "Speed Effects": "/assets/projects/HotOnTheTrail/Situation3.webp"
                 }
             },
             "additionalLink": {
