@@ -152,10 +152,10 @@
             ],
             "galerie": {
                 "Internal Software": {
-                    "Caesar Shots": "assets/projects/PythonTools/CS.webp",
-                    "Shots Maker": "assets/projects/PythonTools/CSMaker.webp",
-                    "Processing": "assets/projects/PythonTools/CSLoading.webp",
-                    "Resullt in Google Sheet": "assets/projects/PythonTools/CSSheet.webp"
+                    "Shots Maker": "assets/projects/PythonTools/CS.webp",
+                    "Shots Maker ": "assets/projects/PythonTools/CSMaker.webp",
+                    "Shots Maker  ": "assets/projects/PythonTools/CSLoading.webp",
+                    "Google Sheet": "assets/projects/PythonTools/CSSheet.webp"
                 },
                 "Davinci Resolve": {
                     "Version Selector": "assets/projects/PythonTools/VersionSelector.webp",
