@@ -49,7 +49,7 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div className="flex flex-col items-center md:items-start text-center md:text-left">
-                    <h3 className="text-[#b5b5b5] text-[1.2rem] font-semibold mb-[25px]">Contact Me</h3>
+                    <h3 className="text-[#b5b5b5] text-[1.2rem] font-semibold mb-[25px]">Socials</h3>
                     <div className="flex gap-[10px]">
                         <a
                             href={profile.contact}
