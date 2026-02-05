@@ -32,21 +32,75 @@ const NavButton = memo(({ project, direction, setDirection, icon: Icon, position
     </div>
 ));
 
+const generateVideoThumbnail = (file) => {
+    return new Promise((resolve, reject) => {
+        const video = document.createElement("video");
+        const canvas = document.createElement("canvas");
+        const context = canvas.getContext("2d");
+
+        video.style.display = "none";
+        video.preload = "metadata";
+        video.muted = true;
+        video.playsInline = true;
+        video.src = typeof file === "string" ? file : URL.createObjectURL(file);
+
+        video.onloadeddata = () => { video.currentTime = 10; };
+
+        video.onseeked = () => {
+            canvas.width = video.videoWidth;
+            canvas.height = video.videoHeight;
+            context.drawImage(video, 0, 0, canvas.width, canvas.height);
+            const thumbnail = canvas.toDataURL("image/jpeg");
+            resolve(thumbnail);
+        };
+
+        video.onerror = (err) => reject("Thumbnail generation failed", err);
+    });
+};
+
 const ProjectVideo = memo(({ url }) => {
     const videoId = getYouTubeID(url);
-    if (!videoId) return null;
-    return (
-        <div className="w-full aspect-video rounded-xl overflow-hidden bg-slate-900 shadow-inner">
-            <iframe
-                className="w-full h-full"
-                src={`https://www.youtube.com/embed/${videoId}?rel=0&modestbranding=1`}
-                title="Project Video"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                loading="lazy"
-            />
-        </div>
-    );
+    const wrapperClass = "w-full aspect-video rounded-xl overflow-hidden bg-slate-900 shadow-inner";
+    const [autoThumbnail, setAutoThumbnail] = useState(null);
+
+    useEffect(() => {
+        if (url && !videoId) {
+            generateVideoThumbnail(url)
+                .then(thumb => setAutoThumbnail(thumb))
+                .catch(err => console.error(err));
+        }
+    }, [url, videoId]);
+
+    if (videoId) {
+        return (
+            <div className={wrapperClass}>
+                <iframe
+                    className="w-full h-full"
+                    src={`https://www.youtube.com/embed/${videoId}?rel=0&modestbranding=1`}
+                    title="Project Video"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    loading="lazy"
+                />
+            </div>
+        );
+    }
+    if (url) {
+        return (
+            <div className={wrapperClass}>
+                <video
+                    className="w-full h-full object-cover"
+                    controls
+                    preload="metadata"
+                    poster={autoThumbnail}
+                >
+                    <source src={url} type="video/mp4" />
+                </video>
+            </div>
+        );
+    }
+
+    return null;
 });
 
 const Box = ({ title, children }) => (

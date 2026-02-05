@@ -165,6 +165,67 @@
         }
     },
     {
+        "name": "Tanebrawl",
+        "id": "Tanebrawl",
+        "thumbnail": "assets/projects/Tanebrawl/thumbnail.webp",
+        "description": "Get behind the wheel with your friends and assert your dominance in explosive car combat!",
+        "category": "Video Game",
+        "tags": [
+            "C++",
+            "Unreal Engine",
+            "Video Game"
+        ],
+        "startDate": "Feb 2024",
+        "endDate": "May 2024",
+        "pageContent":
+        {
+            "description": "Get behind the wheel with your friends and assert your dominance in explosive car combat!\n\nExplore the rugged streets of Dunedin, New Zealand, and master the art of turn-based tactical clashes. In your quest for mechanical supremacy, craft the perfect strategy to send your rivals straight to the scrapyard!",
+            "information": {
+                "Language": "C++",
+                "Game Engine": "Unreal Engine",
+                "Platform": "PC",
+                "Team Size": "12",
+                "Duration": "Feb 2024 — May 2024"
+            },
+            "roles": [
+                "UI Designer",
+                "UI Developer",
+                "Gameplay Programmer"
+            ],
+            "skills": [
+                "C++",
+                "Unreal Engine",
+                "UI/UX",
+                "Figma",
+                "Perforce"
+            ],
+            "videos": [
+                "assets/projects/Tanebrawl/Trailer.webm"
+            ],
+            "myWork": [
+                "Engineered intelligent NPC behaviors in C++",
+                "Conceptualized and built interactive, user-centric interfaces from wireframes to final integration",
+                "Developed scalable mechanics and core systems to deliver a stable, engaging player experience"
+            ],
+            "galerie": {
+                "Interfaces": {
+                    "Title Screen": "assets/projects/Tanebrawl/Home.webp",
+                    "Save Selector": "assets/projects/Tanebrawl/SaveSelector.webp",
+                    "Dialogs": "assets/projects/Tanebrawl/thumbnail.webp",
+                    "Combat": "assets/projects/Tanebrawl/Fight.webp",
+                    "Pause": "assets/projects/Tanebrawl/Pause.webp",
+                    "Shop": "assets/projects/Tanebrawl/Shop.webp"
+                },
+                "Environment": {
+                    "Environment Design": "assets/projects/Tanebrawl/SS_01.webp",
+                    "Environment Design ": "assets/projects/Tanebrawl/SS_02.webp",
+                    "Environment Design  ": "assets/projects/Tanebrawl/SS_03.webp",
+                    "Environment Design   ": "assets/projects/Tanebrawl/SS_04.webp"
+                }
+            }
+        }
+    },
+    {
         "name": "Transatlantic",
         "id": "Transatlantic",
         "thumbnail": "assets/projects/Transatlantique/thumbnail.webp",
@@ -175,8 +236,8 @@
             "Unreal Engine",
             "Video Game"
         ],
-        "startDate": "Jan 2024",
-        "endDate": "Mar 2024",
+        "startDate": "Nov 2023",
+        "endDate": "Jan 2024",
         "pageContent":
         {
             "description": "Come aboard the Transatlantic and dismantle a contraband ring in this captivating game developed with Unreal Engine in C++. As the UX Designer, I meticulously crafted the experience to ensure coherent and intuitive level progression, empowering players to strategically uncover and dismantle the network with deep immersion.",
@@ -185,7 +246,7 @@
                 "Game Engine": "Unreal Engine",
                 "Platform": "PC",
                 "Team Size": "4",
-                "Duration": "Jan 2024 — Mar 2024"
+                "Duration": "Nov 2023 — Jan 2024"
             },
             "roles": [
                 "UX Designer",
