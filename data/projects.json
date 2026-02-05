@@ -36,6 +36,10 @@
                     "Project": "assets/projects/Portfolio/Project.webp",
                     "Image Viewer": "assets/projects/Portfolio/ImageViewer.webp"
                 }
+            },
+            "additionalLink": {
+                "link": "https://github.com/RomaGab/Portfolio",
+                "title": "View on GitHub"
             }
         }
     },

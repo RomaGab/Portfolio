@@ -7,7 +7,7 @@ const Timeline = ({title, data}) => {
     return (
         <div className="flex flex-col gap-10 items-start w-1/2">
             { title && <h1 className="title">{title}</h1>}
-            <div className="flex flex-col text-left gap-[10px] w-full">
+            <div className="flex flex-col text-left gap-[10px] mx-auto">
                 {data.map((item, index) => (
                     <div key={index} className="flex gap-5 min-h-[125px]">
                         <div className="flex flex-col items-center relative">

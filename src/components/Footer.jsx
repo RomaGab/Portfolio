@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 import { Link } from 'react-router-dom';
-import { FaLinkedinIn } from 'react-icons/fa';
+import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
 
 import profile from '../../data/profile.json';
 import projects from '../../data/projects.json';
@@ -59,6 +59,15 @@ const Footer = () => {
                             className="w-[35px] h-[35px] bg-[#1a1a1b] text-white flex items-center justify-center rounded-[4px] no-underline text-[1.1rem] transition-transform duration-200 ease-out hover:-translate-y-[2px] transform-gpu will-change-transform"
                         >
                             <FaLinkedinIn/>
+                        </a>
+                        <a
+                            href={profile.github}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="GitHub"
+                            className="w-[35px] h-[35px] bg-[#1a1a1b] text-white flex items-center justify-center rounded-[4px] no-underline text-[1.1rem] transition-transform duration-200 ease-out hover:-translate-y-[2px] transform-gpu will-change-transform"
+                        >
+                            <FaGithub/>
                         </a>
                     </div>
                 </div>
